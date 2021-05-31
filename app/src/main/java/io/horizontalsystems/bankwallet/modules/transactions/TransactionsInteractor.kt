@@ -8,9 +8,7 @@ import io.horizontalsystems.bankwallet.entities.Wallet
 import io.horizontalsystems.coinkit.models.Coin
 import io.horizontalsystems.core.ICurrencyManager
 import io.reactivex.Single
-import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.schedulers.Schedulers
 import java.math.BigDecimal
 import java.util.concurrent.TimeUnit
 
@@ -34,17 +32,13 @@ class TransactionsInteractor(
         onUpdateWallets()
 
         adapterManager.adaptersReadyObservable
-                .subscribeOn(Schedulers.io())
-                .observeOn(Schedulers.io())
-                .subscribe {
+                .subscribeIO {
                     onUpdateWallets()
                 }
                 .let { disposables.add(it) }
 
         currencyManager.baseCurrencyUpdatedSignal
-                .subscribeOn(Schedulers.io())
-                .observeOn(Schedulers.io())
-                .subscribe {
+                .subscribeIO {
                     ratesDisposables.clear()
                     requestedTimestamps.clear()
                     delegate?.onUpdateBaseCurrency()
@@ -52,9 +46,7 @@ class TransactionsInteractor(
                 .let { disposables.add(it) }
 
         connectivityManager.networkAvailabilitySignal
-                .subscribeOn(Schedulers.io())
-                .observeOn(Schedulers.io())
-                .subscribe {
+                .subscribeIO {
                     if (connectivityManager.isConnected) {
                         delegate?.onConnectionRestore()
                     }
@@ -88,9 +80,7 @@ class TransactionsInteractor(
                 it.first to it.second
             }.toMap()
         }
-                .subscribeOn(Schedulers.io())
-                .observeOn(Schedulers.io())
-                .subscribe { records, _ ->
+                .subscribeIO { records ->
                     delegate?.didFetchRecords(records, initial)
                 }
                 .let { disposables.add(it) }
@@ -107,9 +97,7 @@ class TransactionsInteractor(
             adapterManager.getTransactionsAdapterForWallet(wallet)?.let { adapter ->
                 adapter.lastBlockUpdatedFlowable
                         .throttleLast(3, TimeUnit.SECONDS)
-                        .subscribeOn(Schedulers.io())
-                        .observeOn(Schedulers.io())
-                        .subscribe { onUpdateLastBlock(wallet, adapter) }
+                        .subscribeIO { onUpdateLastBlock(wallet, adapter) }
                         .let { lastBlockHeightDisposables.add(it) }
             }
         }
@@ -125,9 +113,7 @@ class TransactionsInteractor(
         requestedTimestamps[composedKey] = timestamp
 
         rateManager.historicalRate(coin.type, currencyCode, timestamp)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe({
+                .subscribeIO({
                     //kit returns 0 when rate is not available
                     if (it.compareTo(BigDecimal.ZERO) != 0) {
                         delegate?.didFetchRate(it, coin, baseCurrency, timestamp)
@@ -165,17 +151,13 @@ class TransactionsInteractor(
                 adapterStates[wallet] = adapter.transactionsState
 
                 adapter.transactionRecordsFlowable
-                        .subscribeOn(Schedulers.io())
-                        .observeOn(Schedulers.io())
-                        .subscribe {
+                        .subscribeIO {
                             delegate?.didUpdateRecords(it, wallet)
                         }
                         .let { transactionUpdatesDisposables.add(it) }
 
                 adapter.transactionsStateUpdatedFlowable
-                        .subscribeOn(Schedulers.io())
-                        .observeOn(Schedulers.io())
-                        .subscribe {
+                        .subscribeIO {
                             delegate?.onUpdateAdapterState(adapter.transactionsState, wallet)
                         }
                         .let { adapterStateUpdatesDisposables.add(it) }
