@@ -3,30 +3,33 @@ package io.horizontalsystems.bankwallet.modules.swap.info
 import androidx.lifecycle.ViewModel
 import io.horizontalsystems.bankwallet.R
 import io.horizontalsystems.bankwallet.core.providers.Translator
-import io.horizontalsystems.bankwallet.modules.swap.SwapModule
+import io.horizontalsystems.bankwallet.modules.swap.SwapMainModule
 
 class SwapInfoViewModel(
-        dex: SwapModule.Dex
+        dex: SwapMainModule.Dex
 ) : ViewModel() {
 
-    private val dexName = when (dex) {
-        SwapModule.Dex.Uniswap -> "Uniswap"
-        SwapModule.Dex.PancakeSwap -> "PancakeSwap"
+    private val dexName = when (dex.provider) {
+        SwapMainModule.Dex.Provider.Uniswap -> "Uniswap"
+        SwapMainModule.Dex.Provider.PancakeSwap -> "PancakeSwap"
+        SwapMainModule.Dex.Provider.OneInch -> "1inch Network"
     }
 
-    private val blockchain = when (dex) {
-        SwapModule.Dex.Uniswap -> "Ethereum"
-        SwapModule.Dex.PancakeSwap -> "Binance Smart Chain"
+    private val blockchain = when (dex.blockchain) {
+        SwapMainModule.Dex.Blockchain.Ethereum -> "Ethereum"
+        SwapMainModule.Dex.Blockchain.BinanceSmartChain -> "Binance Smart Chain"
     }
 
-    val dexUrl = when (dex) {
-        SwapModule.Dex.Uniswap -> "https://uniswap.org/"
-        SwapModule.Dex.PancakeSwap -> "https://pancakeswap.finance/"
+    val dexUrl = when (dex.provider) {
+        SwapMainModule.Dex.Provider.Uniswap -> "https://uniswap.org/"
+        SwapMainModule.Dex.Provider.PancakeSwap -> "https://pancakeswap.finance/"
+        SwapMainModule.Dex.Provider.OneInch -> "https://app.1inch.io/"
     }
 
-    val title: String = when (dex) {
-        SwapModule.Dex.Uniswap -> "Uniswap v.2"
-        SwapModule.Dex.PancakeSwap -> "PancakeSwap"
+    val title: String = when (dex.provider) {
+        SwapMainModule.Dex.Provider.Uniswap -> "Uniswap"
+        SwapMainModule.Dex.Provider.PancakeSwap -> "PancakeSwap"
+        SwapMainModule.Dex.Provider.OneInch -> "1inch Network"
     }
 
     val description = Translator.getString(R.string.SwapInfo_Description, dexName, blockchain, dexName)

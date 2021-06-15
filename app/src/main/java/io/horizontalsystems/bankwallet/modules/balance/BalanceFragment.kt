@@ -26,11 +26,13 @@ import io.horizontalsystems.bankwallet.modules.manageaccount.dialogs.BackupRequi
 import io.horizontalsystems.bankwallet.modules.manageaccounts.ManageAccountsModule
 import io.horizontalsystems.bankwallet.modules.receive.ReceiveFragment
 import io.horizontalsystems.bankwallet.modules.sendevm.SendEvmModule
-import io.horizontalsystems.bankwallet.modules.swap.SwapFragment
+import io.horizontalsystems.bankwallet.modules.swap.SwapMainFragment
+import io.horizontalsystems.bankwallet.modules.swap.SwapMainModule
 import io.horizontalsystems.bankwallet.ui.extensions.NpaLinearLayoutManager
 import io.horizontalsystems.bankwallet.ui.extensions.SelectorDialog
 import io.horizontalsystems.bankwallet.ui.extensions.SelectorItem
 import io.horizontalsystems.bankwallet.ui.helpers.TextHelper
+import io.horizontalsystems.coinkit.models.CoinType
 import io.horizontalsystems.core.findNavController
 import io.horizontalsystems.core.helpers.HudHelper
 import io.horizontalsystems.views.helpers.LayoutHelper
@@ -160,7 +162,14 @@ class BalanceFragment : BaseFragment(), BalanceItemsAdapter.Listener, BackupRequ
         })
 
         viewModel.openSwap.observe(viewLifecycleOwner, Observer { wallet ->
-            findNavController().navigate(R.id.mainFragment_to_swapFragment, bundleOf(SwapFragment.fromCoinKey to wallet.coin))
+            //TODO move creation of dexParams to service layer
+            val swapInputs = SwapMainModule.SwapInputs(coinFrom = wallet.coin)
+            val dexParams = when (wallet.coin.type) {
+                CoinType.Ethereum, is CoinType.Erc20 -> SwapMainModule.Dex(SwapMainModule.Dex.Blockchain.Ethereum, SwapMainModule.Dex.Provider.OneInch, swapInputs)
+                CoinType.BinanceSmartChain, is CoinType.Bep20 -> SwapMainModule.Dex(SwapMainModule.Dex.Blockchain.BinanceSmartChain, SwapMainModule.Dex.Provider.OneInch, swapInputs)
+                else -> throw IllegalArgumentException()
+            }
+            findNavController().navigate(R.id.mainFragment_to_swapFragment, bundleOf(SwapMainFragment.dexParams to dexParams))
         })
 
         viewModel.didRefreshLiveEvent.observe(viewLifecycleOwner, Observer {

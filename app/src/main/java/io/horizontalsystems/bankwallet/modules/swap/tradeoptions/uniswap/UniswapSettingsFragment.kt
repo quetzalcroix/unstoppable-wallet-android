@@ -1,4 +1,4 @@
-package io.horizontalsystems.bankwallet.modules.swap.tradeoptions
+package io.horizontalsystems.bankwallet.modules.swap.tradeoptions.uniswap
 
 import android.app.Activity
 import android.os.Bundle
@@ -13,17 +13,24 @@ import io.horizontalsystems.bankwallet.core.BaseFragment
 import io.horizontalsystems.bankwallet.core.setOnSingleClickListener
 import io.horizontalsystems.bankwallet.core.utils.ModuleField
 import io.horizontalsystems.bankwallet.modules.qrscanner.QRScannerActivity
-import io.horizontalsystems.bankwallet.modules.swap.SwapViewModel
-import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.SwapTradeOptionsViewModel.ActionState
+import io.horizontalsystems.bankwallet.modules.swap.SwapMainViewModel
+import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.RecipientAddressViewModel
+import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.SwapDeadlineViewModel
+import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.SwapSettingsModule
+import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.SwapSlippageViewModel
+import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.uniswap.UniswapSettingsViewModel.ActionState
+import io.horizontalsystems.bankwallet.modules.swap.uniswap.UniswapModule
+import io.horizontalsystems.bankwallet.modules.swap.uniswap.UniswapViewModel
 import io.horizontalsystems.core.findNavController
 import io.horizontalsystems.core.helpers.HudHelper
-import kotlinx.android.synthetic.main.fragment_swap_settings.*
+import kotlinx.android.synthetic.main.fragment_swap_settings_uniswap.*
 
-class SwapTradeOptionsFragment : BaseFragment() {
-    private val swapViewModel by navGraphViewModels<SwapViewModel>(R.id.swapFragment)
+class UniswapSettingsFragment : BaseFragment() {
+    private val swapMainViewModel by navGraphViewModels<SwapMainViewModel>(R.id.swapFragment)
+    private val uniswapViewModel by navGraphViewModels<UniswapViewModel>(R.id.swapFragment) { UniswapModule.Factory(this, swapMainViewModel.dex) }
 
-    private val vmFactory by lazy { SwapTradeOptionsModule.Factory(swapViewModel.tradeService) }
-    private val viewModel by viewModels<SwapTradeOptionsViewModel> { vmFactory }
+    private val vmFactory by lazy { SwapSettingsModule.Factory(uniswapViewModel.tradeService) }
+    private val uniswapSettingsViewModel by viewModels<UniswapSettingsViewModel> { vmFactory }
     private val deadlineViewModel by viewModels<SwapDeadlineViewModel> { vmFactory }
     private val recipientAddressViewModel by viewModels<RecipientAddressViewModel> { vmFactory }
     private val slippageViewModel by viewModels<SwapSlippageViewModel> { vmFactory }
@@ -42,23 +49,13 @@ class SwapTradeOptionsFragment : BaseFragment() {
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        return inflater.inflate(R.layout.fragment_swap_settings, container, false)
+        return inflater.inflate(R.layout.fragment_swap_settings_uniswap, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        toolbar.setOnMenuItemClickListener { item ->
-            when (item.itemId) {
-                R.id.menuCancel -> {
-                    findNavController().popBackStack()
-                    true
-                }
-                else -> false
-            }
-        }
-
-        viewModel.actionStateLiveData.observe(viewLifecycleOwner) { actionState ->
+        uniswapSettingsViewModel.actionStateLiveData.observe(viewLifecycleOwner) { actionState ->
             when (actionState) {
                 is ActionState.Enabled -> {
                     applyButton.isEnabled = true
@@ -72,7 +69,7 @@ class SwapTradeOptionsFragment : BaseFragment() {
         }
 
         applyButton.setOnSingleClickListener {
-            if (viewModel.onDoneClick()) {
+            if (uniswapSettingsViewModel.onDoneClick()) {
                 findNavController().popBackStack()
             } else {
                 HudHelper.showErrorMessage(this.requireView(), getString(R.string.default_error_msg))

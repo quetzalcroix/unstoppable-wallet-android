@@ -1,6 +1,5 @@
-package io.horizontalsystems.bankwallet.modules.swap
+package io.horizontalsystems.bankwallet.modules.swap.oneinch
 
-import android.os.Parcelable
 import androidx.lifecycle.AbstractSavedStateViewModelFactory
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
@@ -8,71 +7,26 @@ import androidx.savedstate.SavedStateRegistryOwner
 import io.horizontalsystems.bankwallet.core.App
 import io.horizontalsystems.bankwallet.core.fiat.AmountTypeSwitchService
 import io.horizontalsystems.bankwallet.core.fiat.FiatService
-import io.horizontalsystems.bankwallet.entities.CurrencyValue
+import io.horizontalsystems.bankwallet.modules.swap.SwapMainModule
+import io.horizontalsystems.bankwallet.modules.swap.SwapViewItemHelper
 import io.horizontalsystems.bankwallet.modules.swap.allowance.SwapAllowanceService
 import io.horizontalsystems.bankwallet.modules.swap.allowance.SwapAllowanceViewModel
 import io.horizontalsystems.bankwallet.modules.swap.allowance.SwapPendingAllowanceService
 import io.horizontalsystems.bankwallet.modules.swap.coincard.*
-import io.horizontalsystems.bankwallet.modules.swap.providers.UniswapProvider
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
 import io.horizontalsystems.ethereumkit.core.EthereumKit
-import io.horizontalsystems.uniswapkit.UniswapKit
-import kotlinx.android.parcel.Parcelize
-import java.math.BigDecimal
+import io.horizontalsystems.ethereumkit.models.Address
 
-object SwapModule {
-
-    @Parcelize
-    data class CoinBalanceItem(
-            val coin: Coin,
-            val balance: BigDecimal?,
-            val fiatBalanceValue: CurrencyValue?,
-    ) : Parcelable
-
-    data class GuaranteedAmountViewItem(val title: String, val value: String)
-
-    data class PriceImpactViewItem(val level: SwapTradeService.PriceImpactLevel, val value: String)
-
-    @Parcelize
-    enum class Dex : Parcelable {
-        Uniswap, PancakeSwap;
-
-        val evmKit: EthereumKit?
-            get() = when (this) {
-                Uniswap -> App.ethereumKitManager.evmKit
-                PancakeSwap -> App.binanceSmartChainKitManager.evmKit
-            }
-
-        val coin: Coin
-            get() = when (this) {
-                Uniswap -> App.coinManager.getCoin(CoinType.Ethereum)
-                        ?: throw IllegalArgumentException()
-                PancakeSwap -> App.coinManager.getCoin(CoinType.BinanceSmartChain)
-                        ?: throw IllegalArgumentException()
-            }
-    }
-
+object OneInchModule {
     class Factory(
             owner: SavedStateRegistryOwner,
-            private val fromCoin: Coin
+            private val dex: SwapMainModule.Dex
     ) : AbstractSavedStateViewModelFactory(owner, null) {
 
-        private val dex: Dex by lazy {
-            when (fromCoin.type) {
-                CoinType.Ethereum, is CoinType.Erc20 -> Dex.Uniswap
-                CoinType.BinanceSmartChain, is CoinType.Bep20 -> Dex.PancakeSwap
-                else -> throw IllegalArgumentException()
-            }
-        }
-
         private val evmKit: EthereumKit by lazy { dex.evmKit!! }
-        private val uniswapKit by lazy { UniswapKit.getInstance(evmKit) }
-        private val uniswapProvider by lazy { UniswapProvider(uniswapKit) }
-        private val allowanceService by lazy { SwapAllowanceService(uniswapProvider.routerAddress, App.adapterManager, evmKit) }
+        private val allowanceService by lazy { SwapAllowanceService(Address("0x11111112542d85b3ef69ae05771c2dccff4faa26"), App.adapterManager, evmKit) }
         private val pendingAllowanceService by lazy { SwapPendingAllowanceService(App.adapterManager, allowanceService) }
         private val service by lazy {
-            SwapService(
+            OneInchSwapService(
                     dex,
                     tradeService,
                     allowanceService,
@@ -81,7 +35,7 @@ object SwapModule {
             )
         }
         private val tradeService by lazy {
-            SwapTradeService(evmKit, uniswapProvider, fromCoin)
+            OneInchTradeService(evmKit, coinFrom = dex.swapInputs?.coinFrom)
         }
         private val formatter by lazy {
             SwapViewItemHelper(App.numberFormatter)
@@ -103,15 +57,15 @@ object SwapModule {
         override fun <T : ViewModel> create(key: String, modelClass: Class<T>, handle: SavedStateHandle): T {
 
             return when (modelClass) {
-                SwapViewModel::class.java -> {
-                    SwapViewModel(service, tradeService, pendingAllowanceService, formatter) as T
+                OneInchSwapViewModel::class.java -> {
+                    OneInchSwapViewModel(service, tradeService, pendingAllowanceService, formatter) as T
                 }
                 SwapCoinCardViewModel::class.java -> {
                     val fiatService = FiatService(switchService, App.currencyManager, App.xRateManager)
                     val coinCardService: ISwapCoinCardService
                     var maxButtonEnabled = false
 
-                    if (key == coinCardTypeFrom) {
+                    if (key == SwapMainModule.coinCardTypeFrom) {
                         coinCardService = fromCoinCardService
                         switchService.fromListener = fiatService
                         maxButtonEnabled = true
@@ -127,12 +81,6 @@ object SwapModule {
                 else -> throw IllegalArgumentException()
             }
         }
-
-        companion object {
-            const val coinCardTypeFrom = "coinCardTypeFrom"
-            const val coinCardTypeTo = "coinCardTypeTo"
-        }
-
     }
 
 }

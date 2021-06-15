@@ -2,6 +2,7 @@ package io.horizontalsystems.bankwallet.modules.swap.tradeoptions
 
 import io.horizontalsystems.bankwallet.R
 import io.horizontalsystems.bankwallet.core.providers.Translator
+import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.uniswap.SwapTradeOptions
 import java.math.BigDecimal
 
 interface ISwapTradeOptionsService {

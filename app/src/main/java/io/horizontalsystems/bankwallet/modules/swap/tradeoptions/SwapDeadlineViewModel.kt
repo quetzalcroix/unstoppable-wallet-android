@@ -5,16 +5,17 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import io.horizontalsystems.bankwallet.R
 import io.horizontalsystems.bankwallet.core.providers.Translator
+import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.uniswap.UniswapSettingsService
 import io.horizontalsystems.core.SingleLiveEvent
 import kotlin.math.floor
 
 class SwapDeadlineViewModel(
-        private val service: SwapTradeOptionsService
+        private val service: UniswapSettingsService
 ) : ViewModel(), IVerifiedInputViewModel {
 
     override val inputFieldButtonItems: List<InputFieldButtonItem>
         get() {
-            val bounds = SwapTradeOptionsService.recommendedDeadlineBounds
+            val bounds = UniswapSettingsService.recommendedDeadlineBounds
             val lowerMinutes = toMinutes(bounds.lower)
             val upperMinutes = toMinutes(bounds.upper)
 

@@ -11,7 +11,7 @@ import io.horizontalsystems.bankwallet.core.providers.Translator
 import io.horizontalsystems.bankwallet.entities.CoinValue
 import io.horizontalsystems.bankwallet.entities.CurrencyValue
 import io.horizontalsystems.bankwallet.modules.send.SendModule.AmountInfo
-import io.horizontalsystems.bankwallet.modules.swap.SwapModule
+import io.horizontalsystems.bankwallet.modules.swap.SwapMainModule
 import io.horizontalsystems.bankwallet.modules.swap.SwapViewItemHelper
 import io.horizontalsystems.bankwallet.ui.extensions.AmountInputView
 import io.horizontalsystems.coinkit.models.Coin
@@ -60,7 +60,7 @@ class SwapCoinCardViewModel(
     fun secondaryInfoLiveData(): LiveData<String?> = secondaryInfoLiveData
     fun maxEnabledLiveData(): LiveData<Boolean> = maxEnabledLiveData
 
-    val tokensForSelection: List<SwapModule.CoinBalanceItem>
+    val tokensForSelection: List<SwapMainModule.CoinBalanceItem>
         get() = coinCardService.tokensForSelection
 
     fun onSelectCoin(coin: Coin) {
@@ -135,7 +135,7 @@ class SwapCoinCardViewModel(
 
         fiatService.fullAmountInfoObservable
                 .subscribeOn(Schedulers.io())
-                .subscribe { syncFullAmountInfo(it.orElse(null), false) }
+                .subscribe { syncFullAmountInfo(it.orElse(null), false) }//3
                 .let { disposables.add(it) }
 
         switchService.toggleAvailableObservable
@@ -149,10 +149,8 @@ class SwapCoinCardViewModel(
     }
 
     private fun syncAmount(amount: BigDecimal?) {
-        if (coinCardService.isEstimated) {
-            val fullAmountInfo = fiatService.buildForCoin(amount)
-            syncFullAmountInfo(fullAmountInfo, false)
-        }
+        val fullAmountInfo = fiatService.buildForCoin(amount)
+        syncFullAmountInfo(fullAmountInfo, false)
     }
 
     private fun syncCoin(coin: Coin?) {
@@ -187,16 +185,14 @@ class SwapCoinCardViewModel(
         }
     }
 
-    private fun syncFullAmountInfo(fullAmountInfo: FiatService.FullAmountInfo?, force: Boolean = false, inputAmount: BigDecimal? = null) {
+    private fun syncFullAmountInfo(fullAmountInfo: FiatService.FullAmountInfo?, force: Boolean = false, inputAmount: BigDecimal? = null) {//4
         updateInputFields()
 
         if (fullAmountInfo == null) {
-            if (!force && coinCardService.isEstimated) {
-                amountLiveData.postValue(null)
-            }
+            amountLiveData.postValue(null)
             secondaryInfoLiveData.postValue(secondaryInfoPlaceHolder())
 
-            setCoinValueToService(inputAmount, force)
+            setCoinValueToService(inputAmount, force)//5
         } else {
             val decimals = min(fullAmountInfo.primaryDecimal, maxValidDecimals)
             val amountString = fullAmountInfo.primaryValue.setScale(decimals, RoundingMode.FLOOR)?.stripTrailingZeros()?.toPlainString()
@@ -218,7 +214,7 @@ class SwapCoinCardViewModel(
 
     private fun setCoinValueToService(coinAmount: BigDecimal?, force: Boolean) {
         if (force || !coinCardService.isEstimated) {
-            coinCardService.onChangeAmount(coinAmount)
+            coinCardService.onChangeAmount(coinAmount)//6
         }
     }
 

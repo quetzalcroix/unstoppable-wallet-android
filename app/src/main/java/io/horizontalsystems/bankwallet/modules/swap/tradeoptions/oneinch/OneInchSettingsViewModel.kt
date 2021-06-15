@@ -1,18 +1,19 @@
-package io.horizontalsystems.bankwallet.modules.swap.tradeoptions
+package io.horizontalsystems.bankwallet.modules.swap.tradeoptions.oneinch
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import io.horizontalsystems.bankwallet.R
 import io.horizontalsystems.bankwallet.core.providers.Translator
-import io.horizontalsystems.bankwallet.modules.swap.SwapTradeService
-import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.ISwapTradeOptionsService.*
+import io.horizontalsystems.bankwallet.modules.swap.oneinch.OneInchTradeService
+import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.ISwapTradeOptionsService.State
+import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.ISwapTradeOptionsService.TradeOptionsError
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 
-class SwapTradeOptionsViewModel(
-        private val service: SwapTradeOptionsService,
-        private val tradeService: SwapTradeService
-        ) : ViewModel() {
+class OneInchSettingsViewModel(
+        private val service: OneInchSettingsService,
+        private val tradeService: OneInchTradeService
+) : ViewModel() {
 
     val actionStateLiveData = MutableLiveData<ActionState>(ActionState.Enabled())
 

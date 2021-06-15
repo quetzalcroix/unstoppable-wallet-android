@@ -1,15 +1,17 @@
-package io.horizontalsystems.bankwallet.modules.swap.tradeoptions
+package io.horizontalsystems.bankwallet.modules.swap.tradeoptions.oneinch
 
 import android.util.Range
 import io.horizontalsystems.bankwallet.core.Clearable
 import io.horizontalsystems.bankwallet.entities.Address
+import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.IRecipientAddressService
 import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.ISwapTradeOptionsService.*
+import io.horizontalsystems.bankwallet.modules.swap.tradeoptions.uniswap.SwapTradeOptions
 import io.reactivex.Observable
 import io.reactivex.subjects.BehaviorSubject
 import java.math.BigDecimal
 import io.horizontalsystems.ethereumkit.models.Address as EthAddress
 
-class SwapTradeOptionsService(tradeOptions: SwapTradeOptions) : IRecipientAddressService, Clearable {
+class OneInchSettingsService(tradeOptions: SwapTradeOptions) : IRecipientAddressService, Clearable {
 
     var state: State = State.Valid(tradeOptions)
         private set(value) {
