@@ -11,7 +11,7 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
-        android:name=".core.App"
+        android:name="io.vextabit.bankwallet.core.App"
         android:allowBackup="false"
         android:icon="@mipmap/bitcoin_launcher"
         android:label="@string/App_Name"
