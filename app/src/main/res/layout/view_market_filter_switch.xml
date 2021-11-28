@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:gravity="center_vertical"
-    tools:parentTag="io.horizontalsystems.bankwallet.ui.extensions.MarketFilterView">
+    tools:parentTag="io.vextabit.wallet.ui.extensions.MarketFilterView">
 
     <TextView
         android:id="@+id/title"

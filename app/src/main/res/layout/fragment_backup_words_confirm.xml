@@ -17,7 +17,7 @@
         app:title="@string/Backup_Confirmation_CheckTitle"
         app:titleTextAppearance="@style/Title3" />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.InputView
+    <io.vextabit.wallet.ui.extensions.InputView
         android:id="@+id/wordOne"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.InputView
+    <io.vextabit.wallet.ui.extensions.InputView
         android:id="@+id/wordTwo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wordTwo" />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.InputView
+    <io.vextabit.wallet.ui.extensions.InputView
         android:id="@+id/passphrase"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

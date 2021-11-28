@@ -3,7 +3,7 @@ package io.horizontalsystems.pin
 import com.nhaarman.mockito_kotlin.verify
 import com.nhaarman.mockito_kotlin.verifyNoMoreInteractions
 import com.nhaarman.mockito_kotlin.whenever
-import io.horizontalsystems.bankwallet.core.IPinManager
+import io.vextabit.wallet.core.IPinManager
 import org.junit.After
 import org.junit.Assert
 import org.junit.Before

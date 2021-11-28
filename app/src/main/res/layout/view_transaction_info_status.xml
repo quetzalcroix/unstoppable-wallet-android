@@ -49,7 +49,7 @@
         app:tint="@color/remus"
         />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.RotatingCircleProgressView
+    <io.vextabit.wallet.ui.extensions.RotatingCircleProgressView
         android:id="@+id/progressSpinner"
         android:layout_width="25dp"
         android:layout_height="25dp"

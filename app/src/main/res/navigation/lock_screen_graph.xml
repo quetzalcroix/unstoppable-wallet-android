@@ -7,6 +7,6 @@
 
     <fragment
         android:id="@+id/lockScreenFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.lockscreen.LockScreenFragment"
+        android:name="io.vextabit.wallet.modules.lockscreen.LockScreenFragment"
         tools:layout="@layout/fragment_lockscreen"/>
 </navigation>

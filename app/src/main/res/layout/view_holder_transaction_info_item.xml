@@ -105,7 +105,7 @@
         tools:text="June 6"
         />
 
-    <io.horizontalsystems.bankwallet.modules.transactionInfo.TransactionInfoStatusView
+    <io.vextabit.wallet.modules.transactionInfo.TransactionInfoStatusView
         android:id="@+id/transactionStatusView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

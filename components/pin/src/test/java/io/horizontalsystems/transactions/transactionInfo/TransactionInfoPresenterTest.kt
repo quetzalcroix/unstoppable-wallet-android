@@ -1,9 +1,9 @@
-package io.horizontalsystems.bankwallet.modules.transactions.transactionInfo
+package io.vextabit.wallet.modules.transactions.transactionInfo
 
 import com.nhaarman.mockito_kotlin.whenever
-import io.horizontalsystems.bankwallet.entities.Coin
-import io.horizontalsystems.bankwallet.entities.CoinType
-import io.horizontalsystems.bankwallet.entities.Wallet
+import io.vextabit.wallet.entities.Coin
+import io.vextabit.wallet.entities.CoinType
+import io.vextabit.wallet.entities.Wallet
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito

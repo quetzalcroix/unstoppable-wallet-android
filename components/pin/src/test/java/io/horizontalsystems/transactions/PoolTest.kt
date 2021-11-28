@@ -1,8 +1,8 @@
-package io.horizontalsystems.bankwallet.modules.transactions
+package io.vextabit.wallet.modules.transactions
 
 import com.nhaarman.mockito_kotlin.*
-import io.horizontalsystems.bankwallet.entities.TransactionRecord
-import io.horizontalsystems.bankwallet.entities.Wallet
+import io.vextabit.wallet.entities.TransactionRecord
+import io.vextabit.wallet.entities.Wallet
 import org.junit.Assert
 import org.junit.Test
 import org.mockito.Mockito.mock

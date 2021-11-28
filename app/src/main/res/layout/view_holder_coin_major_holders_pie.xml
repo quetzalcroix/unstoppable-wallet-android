@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <io.horizontalsystems.bankwallet.modules.coin.majorholders.SemiCircleView
+    <io.vextabit.wallet.modules.coin.majorholders.SemiCircleView
         android:id="@+id/majorHolderView"
         android:layout_width="match_parent"
         android:layout_height="148dp"

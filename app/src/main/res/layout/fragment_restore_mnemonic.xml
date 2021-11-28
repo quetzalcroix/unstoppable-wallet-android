@@ -64,7 +64,7 @@
                 app:icon="@drawable/ic_key_phrase_20"
                 app:title="@string/Passphrase" />
 
-            <io.horizontalsystems.bankwallet.ui.extensions.InputView
+            <io.vextabit.wallet.ui.extensions.InputView
                 android:id="@+id/passphrase"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

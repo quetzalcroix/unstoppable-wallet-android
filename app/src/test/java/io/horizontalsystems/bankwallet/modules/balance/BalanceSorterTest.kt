@@ -1,10 +1,10 @@
-package io.horizontalsystems.bankwallet.modules.balance
+package io.vextabit.wallet.modules.balance
 
 import com.nhaarman.mockito_kotlin.doReturn
 import com.nhaarman.mockito_kotlin.mock
-//import io.horizontalsystems.bankwallet.entities.Coin
-//import io.horizontalsystems.bankwallet.entities.CoinType
-import io.horizontalsystems.bankwallet.entities.Wallet
+//import io.vextabit.wallet.entities.Coin
+//import io.vextabit.wallet.entities.CoinType
+import io.vextabit.wallet.entities.Wallet
 import org.junit.Assert
 import org.junit.Test
 

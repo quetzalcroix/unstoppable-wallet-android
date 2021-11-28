@@ -1,9 +1,9 @@
-package io.horizontalsystems.bankwallet.modules.restorewords
+package io.vextabit.wallet.modules.restorewords
 
 import com.nhaarman.mockito_kotlin.verify
-import io.horizontalsystems.bankwallet.R
-import io.horizontalsystems.bankwallet.modules.restore.words.RestoreWordsModule
-import io.horizontalsystems.bankwallet.modules.restore.words.RestoreWordsPresenter
+import io.vextabit.wallet.R
+import io.vextabit.wallet.modules.restore.words.RestoreWordsModule
+import io.vextabit.wallet.modules.restore.words.RestoreWordsPresenter
 import io.horizontalsystems.hdwalletkit.Mnemonic
 import org.junit.Before
 import org.junit.Test

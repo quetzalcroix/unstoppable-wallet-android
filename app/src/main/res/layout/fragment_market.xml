@@ -22,7 +22,7 @@
             app:title="@string/Market_Title"
             app:titleTextAppearance="@style/Title3"/>
 
-        <io.horizontalsystems.bankwallet.ui.extensions.NestedScrollableHost
+        <io.vextabit.wallet.ui.extensions.NestedScrollableHost
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -40,7 +40,7 @@
                 tools:itemCount="2"
                 tools:listitem="@layout/view_holder_filter" />
 
-        </io.horizontalsystems.bankwallet.ui.extensions.NestedScrollableHost>
+        </io.vextabit.wallet.ui.extensions.NestedScrollableHost>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.viewpager2.widget.ViewPager2

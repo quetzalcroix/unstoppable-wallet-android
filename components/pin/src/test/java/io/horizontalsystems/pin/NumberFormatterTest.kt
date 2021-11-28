@@ -1,9 +1,9 @@
-package io.horizontalsystems.bankwallet.core.managers
+package io.vextabit.wallet.core.managers
 
 import com.nhaarman.mockito_kotlin.whenever
-import io.horizontalsystems.bankwallet.core.ILanguageManager
-import io.horizontalsystems.bankwallet.entities.*
-import io.horizontalsystems.bankwallet.entities.Currency
+import io.vextabit.wallet.core.ILanguageManager
+import io.vextabit.wallet.entities.*
+import io.vextabit.wallet.entities.Currency
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test

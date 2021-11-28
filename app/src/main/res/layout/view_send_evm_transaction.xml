@@ -16,7 +16,7 @@
         tools:itemCount="1"
         tools:listitem="@layout/view_holder_evm_confirmation_subhead" />
 
-    <io.horizontalsystems.bankwallet.ui.FeeSelectorView
+    <io.vextabit.wallet.ui.FeeSelectorView
         android:id="@+id/feeSelectorView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

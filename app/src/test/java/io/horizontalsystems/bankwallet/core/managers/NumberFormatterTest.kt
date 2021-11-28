@@ -1,4 +1,4 @@
-package io.horizontalsystems.bankwallet.core.managers
+package io.vextabit.wallet.core.managers
 
 import com.nhaarman.mockito_kotlin.mock
 import com.nhaarman.mockito_kotlin.whenever

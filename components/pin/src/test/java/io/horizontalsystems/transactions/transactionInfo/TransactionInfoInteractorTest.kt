@@ -1,7 +1,7 @@
-package io.horizontalsystems.bankwallet.modules.transactions.transactionInfo
+package io.vextabit.wallet.modules.transactions.transactionInfo
 
 import com.nhaarman.mockito_kotlin.verify
-import io.horizontalsystems.bankwallet.core.IClipboardManager
+import io.vextabit.wallet.core.IClipboardManager
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.mock

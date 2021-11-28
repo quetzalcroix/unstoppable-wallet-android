@@ -1,12 +1,12 @@
 <resources>
-    <string name="App_Name" translatable="false">Unstoppable</string>
+    <string name="App_Name" translatable="false">Vextabit Wallet</string>
 
     <!--Common-->
 
     <string name="Alert_Cancel">Cancel</string>
     <string name="Alert_Copy">Copy</string>
     <string name="Alert_Close">Close</string>
-    <string name="Alert_Loading">Loading...</string>
+    <string name="Alert_Loading">Loading…</string>
     <string name="Alert_Restart">Restart</string>
     <string name="Alert_Skip" translatable="false">SKIP</string>
     <string name="Alert_Select" translatable="false">SELECT</string>
@@ -36,17 +36,17 @@
     <string name="NotAvailable">N/A</string>
     <string name="Any">Any</string>
 
-    <string name="FooterText" translatable="false">© Horizontal Systems 2021</string>
+    <string name="FooterText" translatable="false">Vextabit Wallet 2021</string>
 
     <!--Intro-->
 
-    <string name="Intro_Wallet_Screen1Description">Be Unstoppable</string>
-    <string name="Intro_Wallet_Screen2Title">Unchain Assets</string>
-    <string name="Intro_Wallet_Screen2Description">Don\'t lock yourself in and don\'t let others do that to you.</string>
-    <string name="Intro_Wallet_Screen3Title">Go Borderless</string>
-    <string name="Intro_Wallet_Screen3Description">Bypass conditional barriers and access markets globally.</string>
+    <string name="Intro_Wallet_Screen1Description">Fully Decentralized</string>
+    <string name="Intro_Wallet_Screen2Title">Unbound Cryptoassets</string>
+    <string name="Intro_Wallet_Screen2Description">Your Cryptoassets are fully yours.</string>
+    <string name="Intro_Wallet_Screen3Title">Unbordered Movement</string>
+    <string name="Intro_Wallet_Screen3Description">Become fully decentralized solution for all.</string>
     <string name="Intro_Wallet_Screen4Title">Stay Private</string>
-    <string name="Intro_Wallet_Screen4Description">Do not leak your private and financial data to the world.</string>
+    <string name="Intro_Wallet_Screen4Description">Privacy is top priority.</string>
 
     <!--Rooted Device-->
 

@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="3,979.87" />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.RateDiffView
+    <io.vextabit.wallet.ui.extensions.RateDiffView
         android:id="@+id/diffValue"
         style="@style/Subhead1"
         android:layout_width="wrap_content"

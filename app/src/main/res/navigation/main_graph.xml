@@ -10,7 +10,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.main.MainFragment"
+        android:name="io.vextabit.wallet.modules.main.MainFragment"
         tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/mainFragment_to_manageWalletsFragment"
@@ -82,7 +82,7 @@
     </fragment>
     <fragment
         android:id="@+id/sendEvmFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.sendevm.SendEvmFragment"
+        android:name="io.vextabit.wallet.modules.sendevm.SendEvmFragment"
         tools:layout="@layout/fragment_send_evm">
         <action
             android:id="@+id/sendEvmFragment_to_sendEvmConfirmationFragment"
@@ -90,7 +90,7 @@
     </fragment>
     <fragment
         android:id="@+id/sendEvmConfirmationFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.sendevm.confirmation.SendEvmConfirmationFragment"
+        android:name="io.vextabit.wallet.modules.sendevm.confirmation.SendEvmConfirmationFragment"
         tools:layout="@layout/fragment_confirmation_send_evm">
         <action
             android:id="@+id/sendEvmConfirmationFragment_to_feeSpeedInfo"
@@ -98,11 +98,11 @@
     </fragment>
     <fragment
         android:id="@+id/transactionInfoFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.transactionInfo.TransactionInfoFragment"
+        android:name="io.vextabit.wallet.modules.transactionInfo.TransactionInfoFragment"
         tools:layout="@layout/fragment_transaction_info" />
     <fragment
         android:id="@+id/manageWalletsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.managewallets.view.ManageWalletsFragment"
+        android:name="io.vextabit.wallet.modules.managewallets.view.ManageWalletsFragment"
         tools:layout="@layout/fragment_manage_wallets">
         <action
             android:id="@+id/manageWalletsFragment_to_addToken"
@@ -112,7 +112,7 @@
 
     <fragment
         android:id="@+id/manageAccountsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.manageaccounts.ManageAccountsFragment"
+        android:name="io.vextabit.wallet.modules.manageaccounts.ManageAccountsFragment"
         tools:layout="@layout/fragment_manage_accounts">
         <action
             android:id="@+id/manageAccountsFragment_to_createAccountFragment"
@@ -127,7 +127,7 @@
 
     <fragment
         android:id="@+id/manageAccountFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.manageaccount.ManageAccountFragment"
+        android:name="io.vextabit.wallet.modules.manageaccount.ManageAccountFragment"
         tools:layout="@layout/fragment_manage_account">
         <action
             android:id="@+id/manageAccountFragment_to_showKeyFragment"
@@ -142,7 +142,7 @@
 
     <fragment
         android:id="@+id/showKeyIntroFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.showkey.ShowKeyIntroFragment"
+        android:name="io.vextabit.wallet.modules.showkey.ShowKeyIntroFragment"
         tools:layout="@layout/fragment_show_key_intro">
         <action
             android:id="@+id/showKeyIntroFragment_to_pinFragment"
@@ -154,12 +154,12 @@
 
     <fragment
         android:id="@+id/showKeyMainFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.showkey.ShowKeyMainFragment"
+        android:name="io.vextabit.wallet.modules.showkey.ShowKeyMainFragment"
         tools:layout="@layout/fragment_show_key_main" />
 
     <fragment
         android:id="@+id/backupKeyFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.backupkey.BackupKeyFragment"
+        android:name="io.vextabit.wallet.modules.backupkey.BackupKeyFragment"
         tools:layout="@layout/fragment_backup_key">
         <action
             android:id="@+id/backupKeyFragment_to_pinFragment"
@@ -171,7 +171,7 @@
 
     <fragment
         android:id="@+id/showBackupWordsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.backupkey.ShowBackupWordsFragment"
+        android:name="io.vextabit.wallet.modules.backupkey.ShowBackupWordsFragment"
         tools:layout="@layout/fragment_show_backup_words">
         <action
             android:id="@+id/showBackupWordsFragment_to_backupConfirmationKeyFragment"
@@ -180,12 +180,12 @@
 
     <fragment
         android:id="@+id/backupConfirmationKeyFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.backupconfirmkey.BackupConfirmKeyFragment"
+        android:name="io.vextabit.wallet.modules.backupconfirmkey.BackupConfirmKeyFragment"
         tools:layout="@layout/fragment_backup_words_confirm" />
 
     <fragment
         android:id="@+id/securitySettingsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.settings.security.SecuritySettingsFragment"
+        android:name="io.vextabit.wallet.modules.settings.security.SecuritySettingsFragment"
         tools:layout="@layout/fragment_settings_security">
         <action
             android:id="@+id/securitySettingsFragment_to_privacySettingsFragment"
@@ -196,11 +196,11 @@
     </fragment>
     <fragment
         android:id="@+id/appStatusFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.settings.appstatus.AppStatusFragment"
+        android:name="io.vextabit.wallet.modules.settings.appstatus.AppStatusFragment"
         tools:layout="@layout/fragment_app_status" />
     <fragment
         android:id="@+id/faqListFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.settings.faq.FaqListFragment"
+        android:name="io.vextabit.wallet.modules.settings.faq.FaqListFragment"
         android:label="@string/Settings_Faq"
         tools:layout="@layout/fragment_faq_list">
         <action
@@ -209,7 +209,7 @@
     </fragment>
     <fragment
         android:id="@+id/academyFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.settings.guides.GuidesFragment"
+        android:name="io.vextabit.wallet.modules.settings.guides.GuidesFragment"
         android:label="@string/Guides_Title"
         tools:layout="@layout/fragment_guides">
         <action
@@ -218,7 +218,7 @@
     </fragment>
     <fragment
         android:id="@+id/baseCurrencySettingsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.basecurrency.BaseCurrencySettingsFragment"
+        android:name="io.vextabit.wallet.modules.basecurrency.BaseCurrencySettingsFragment"
         tools:layout="@layout/fragment_base_currency_settings" />
     <fragment
         android:id="@+id/languageSettingsFragment"
@@ -226,15 +226,15 @@
         tools:layout="@layout/fragment_language_settings" />
     <fragment
         android:id="@+id/themeSwitchFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.settings.theme.ThemeSwitchFragment"
+        android:name="io.vextabit.wallet.modules.settings.theme.ThemeSwitchFragment"
         tools:layout="@layout/fragment_theme_switcher" />
     <fragment
         android:id="@+id/termsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.settings.terms.TermsFragment"
+        android:name="io.vextabit.wallet.modules.settings.terms.TermsFragment"
         tools:layout="@layout/fragment_terms_settings" />
     <fragment
         android:id="@+id/aboutAppFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.settings.about.AboutFragment"
+        android:name="io.vextabit.wallet.modules.settings.about.AboutFragment"
         tools:layout="@layout/fragment_about">
         <action
             android:id="@+id/aboutAppFragment_to_appStatusFragment"
@@ -248,11 +248,11 @@
     </fragment>
     <fragment
         android:id="@+id/notificationsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.settings.notifications.NotificationsFragment"
+        android:name="io.vextabit.wallet.modules.settings.notifications.NotificationsFragment"
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/experimentalFeaturesFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.settings.experimental.ExperimentalFeaturesFragment"
+        android:name="io.vextabit.wallet.modules.settings.experimental.ExperimentalFeaturesFragment"
         tools:layout="@layout/fragment_experimental_features">
         <action
             android:id="@+id/experimentalFeaturesFragment_to_bitcoinHodlingFragment"
@@ -260,7 +260,7 @@
     </fragment>
     <fragment
         android:id="@+id/coinFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.coin.CoinFragment"
+        android:name="io.vextabit.wallet.modules.coin.CoinFragment"
         tools:layout="@layout/fragment_coin">
         <action
             android:id="@+id/coinFragment_to_coinMarketsFragment"
@@ -286,27 +286,27 @@
     </fragment>
     <fragment
         android:id="@+id/coinMarketsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.coin.coinmarkets.CoinMarketsFragment"
+        android:name="io.vextabit.wallet.modules.coin.coinmarkets.CoinMarketsFragment"
         tools:layout="@layout/fragment_coin_markets" />
     <fragment
         android:id="@+id/tvlRankFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.coin.tvlrank.TvlRankFragment"
+        android:name="io.vextabit.wallet.modules.coin.tvlrank.TvlRankFragment"
         tools:layout="@layout/fragment_coin_markets" />
     <fragment
         android:id="@+id/coinInvestorsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.coin.coininvestors.CoinInvestorsFragment"
+        android:name="io.vextabit.wallet.modules.coin.coininvestors.CoinInvestorsFragment"
         tools:layout="@layout/fragment_recyclerview" />
     <fragment
         android:id="@+id/coinMajorHoldersFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.coin.majorholders.CoinMajorHoldersFragment"
+        android:name="io.vextabit.wallet.modules.coin.majorholders.CoinMajorHoldersFragment"
         tools:layout="@layout/fragment_recyclerview" />
     <fragment
         android:id="@+id/coinAuditsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.coin.audits.CoinAuditsFragment"
+        android:name="io.vextabit.wallet.modules.coin.audits.CoinAuditsFragment"
         tools:layout="@layout/fragment_recyclerview" />
     <fragment
         android:id="@+id/coinSecurityInfoFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.coin.CoinSecurityInfoFragment"
+        android:name="io.vextabit.wallet.modules.coin.CoinSecurityInfoFragment"
         tools:layout="@layout/fragment_coin_security_info" />
     <fragment
         android:id="@+id/pinFragment"
@@ -314,15 +314,15 @@
         tools:layout="@layout/fragment_pin" />
     <fragment
         android:id="@+id/bitcoinHodlingFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.settings.experimental.bitcoinhodling.BitcoinHodlingFragment"
+        android:name="io.vextabit.wallet.modules.settings.experimental.bitcoinhodling.BitcoinHodlingFragment"
         tools:layout="@layout/fragment_bitcoin_hodling" />
     <fragment
         android:id="@+id/releaseNotesFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.releasenotes.ReleaseNotesFragment"
+        android:name="io.vextabit.wallet.modules.releasenotes.ReleaseNotesFragment"
         tools:layout="@layout/fragment_release_notes" />
     <fragment
         android:id="@+id/markdownFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.markdown.MarkdownFragment"
+        android:name="io.vextabit.wallet.modules.markdown.MarkdownFragment"
         tools:layout="@layout/fragment_markdown">
         <action
             android:id="@+id/markdownFragment_markdownFragment"
@@ -330,11 +330,11 @@
     </fragment>
     <fragment
         android:id="@+id/addTokenFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.addtoken.AddTokenFragment"
+        android:name="io.vextabit.wallet.modules.addtoken.AddTokenFragment"
         tools:layout="@layout/fragment_add_token" />
     <fragment
         android:id="@+id/swapFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.swap.SwapMainFragment"
+        android:name="io.vextabit.wallet.modules.swap.SwapMainFragment"
         android:label="@string/Swap"
         tools:layout="@layout/fragment_swap">
         <action
@@ -360,7 +360,7 @@
     </fragment>
     <fragment
         android:id="@+id/swapApproveFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.swap.approve.SwapApproveFragment"
+        android:name="io.vextabit.wallet.modules.swap.approve.SwapApproveFragment"
         tools:layout="@layout/fragment_swap_approve">
         <action
             android:id="@+id/swapApproveFragment_to_swapApproveConfirmationFragment"
@@ -368,7 +368,7 @@
     </fragment>
     <fragment
         android:id="@+id/uniswapConfirmationFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.swap.confirmation.uniswap.UniswapConfirmationFragment"
+        android:name="io.vextabit.wallet.modules.swap.confirmation.uniswap.UniswapConfirmationFragment"
         tools:layout="@layout/fragment_confirmation_swap">
         <action
             android:id="@+id/uniswapConfirmationFragment_to_feeSpeedInfo"
@@ -376,7 +376,7 @@
     </fragment>
     <fragment
         android:id="@+id/oneInchConfirmationFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.swap.confirmation.oneinch.OneInchSwapConfirmationFragment"
+        android:name="io.vextabit.wallet.modules.swap.confirmation.oneinch.OneInchSwapConfirmationFragment"
         tools:layout="@layout/fragment_confirmation_swap">
         <action
             android:id="@+id/oneInchConfirmationFragment_to_feeSpeedInfo"
@@ -385,7 +385,7 @@
 
     <fragment
         android:id="@+id/swapApproveConfirmationFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.swap.approve.confirmation.SwapApproveConfirmationFragment"
+        android:name="io.vextabit.wallet.modules.swap.approve.confirmation.SwapApproveConfirmationFragment"
         tools:layout="@layout/fragment_confirmation_approve_swap">
         <action
             android:id="@+id/swapApproveConfirmationFragment_to_feeSpeedInfo"
@@ -394,11 +394,11 @@
 
     <fragment
         android:id="@+id/swapInfoFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.swap.info.SwapInfoFragment"
+        android:name="io.vextabit.wallet.modules.swap.info.SwapInfoFragment"
         tools:layout="@layout/fragment_swap_info" />
     <fragment
         android:id="@+id/swapSettingsMainFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.swap.settings.SwapSettingsMainFragment"
+        android:name="io.vextabit.wallet.modules.swap.settings.SwapSettingsMainFragment"
         android:label="SwapTradeOptionsFragment"
         app:enterAnim="@anim/slide_from_bottom"
         app:exitAnim="@android:anim/fade_out"
@@ -410,7 +410,7 @@
     </fragment>
     <fragment
         android:id="@+id/marketSearchFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.market.search.MarketSearchFragment"
+        android:name="io.vextabit.wallet.modules.market.search.MarketSearchFragment"
         tools:layout="@layout/fragment_market_search">
         <action
             android:id="@+id/marketSearchFragment_to_marketAdvancedSearchFragment"
@@ -418,7 +418,7 @@
     </fragment>
     <fragment
         android:id="@+id/marketAdvancedSearchFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.market.advancedsearch.MarketAdvancedSearchFragment"
+        android:name="io.vextabit.wallet.modules.market.advancedsearch.MarketAdvancedSearchFragment"
         tools:layout="@layout/fragment_market_search_filter">
         <action
             android:id="@+id/marketAdvancedSearchFragment_to_marketAdvancedSearchFragmentResults"
@@ -426,31 +426,31 @@
     </fragment>
     <fragment
         android:id="@+id/marketAdvancedSearchResultsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.market.advancedsearch.MarketAdvancedSearchResultsFragment"
+        android:name="io.vextabit.wallet.modules.market.advancedsearch.MarketAdvancedSearchResultsFragment"
         tools:layout="@layout/fragment_market_advanced_search_results" />
     <fragment
         android:id="@+id/feeSpeedInfoFragment"
-        android:name="io.horizontalsystems.bankwallet.ui.FeeInfoFragment"
+        android:name="io.vextabit.wallet.ui.FeeInfoFragment"
         tools:layout="@layout/fragment_fee_info" />
     <fragment
         android:id="@+id/createAccountFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.createaccount.CreateAccountFragment"
+        android:name="io.vextabit.wallet.modules.createaccount.CreateAccountFragment"
         tools:layout="@layout/fragment_create_account" />
     <fragment
         android:id="@+id/restoreMnemonicFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.restoremnemonic.RestoreMnemonicFragment"
+        android:name="io.vextabit.wallet.modules.restoremnemonic.RestoreMnemonicFragment"
         tools:layout="@layout/fragment_restore_mnemonic" />
     <fragment
         android:id="@+id/restoreSelectCoinsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.restore.restoreselectcoins.RestoreSelectCoinsFragment"
+        android:name="io.vextabit.wallet.modules.restore.restoreselectcoins.RestoreSelectCoinsFragment"
         tools:layout="@layout/fragment_manage_wallets" />
     <fragment
         android:id="@+id/receiveFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.receive.ReceiveFragment"
+        android:name="io.vextabit.wallet.modules.receive.ReceiveFragment"
         android:label="ReceiveFragment" />
     <fragment
         android:id="@+id/networkSettingsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.networksettings.NetworkSettingsFragment"
+        android:name="io.vextabit.wallet.modules.networksettings.NetworkSettingsFragment"
         android:label="NetworkSettingsFragment">
         <action
             android:id="@+id/networkSettingsFragment_to_evmNetworkFragment"
@@ -458,29 +458,29 @@
     </fragment>
     <fragment
         android:id="@+id/evmNetworkFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.evmnetwork.EvmNetworkFragment"
+        android:name="io.vextabit.wallet.modules.evmnetwork.EvmNetworkFragment"
         android:label="EvmNetworkFragment" />
 
     <!--  Dialogs/BottomSheets  -->
 <!--    <dialog-->
 <!--        android:id="@+id/transactionInfoDialog"-->
-<!--        android:name="io.horizontalsystems.bankwallet.modules.transactionInfo.TransactionInfoFragment"-->
+<!--        android:name="io.vextabit.wallet.modules.transactionInfo.TransactionInfoFragment"-->
 <!--        tools:layout="@layout/fragment_transaction_info" />-->
     <dialog
         android:id="@+id/infoFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.transactionInfo.InfoFragment"
+        android:name="io.vextabit.wallet.modules.transactionInfo.InfoFragment"
         tools:layout="@layout/fragment_info" />
     <dialog
         android:id="@+id/statusInfoDialog"
-        android:name="io.horizontalsystems.bankwallet.modules.transactionInfo.StatusInfoFragment"
+        android:name="io.vextabit.wallet.modules.transactionInfo.StatusInfoFragment"
         tools:layout="@layout/fragment_status_info" />
 
     <dialog
         android:id="@+id/selectSwapCoinDialog"
-        android:name="io.horizontalsystems.bankwallet.modules.swap.coinselect.SelectSwapCoinDialogFragment"
+        android:name="io.vextabit.wallet.modules.swap.coinselect.SelectSwapCoinDialogFragment"
         tools:layout="@layout/fragment_swap_select_token" />
     <dialog
         android:id="@+id/selectSwapProviderDialog"
-        android:name="io.horizontalsystems.bankwallet.modules.swap.providerselect.SelectSwapProviderDialogFragment"
+        android:name="io.vextabit.wallet.modules.swap.providerselect.SelectSwapProviderDialogFragment"
         tools:layout="@layout/fragment_swap_select_provider" />
 </navigation>

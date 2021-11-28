@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/titleText"
         tools:text="Bitcoin" />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.RateDiffView
+    <io.vextabit.wallet.ui.extensions.RateDiffView
         android:id="@+id/txDiff"
         style="@style/Body"
         android:layout_width="wrap_content"

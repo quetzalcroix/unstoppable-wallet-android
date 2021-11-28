@@ -1,4 +1,4 @@
-package io.horizontalsystems.bankwallet.ui.extensions
+package io.vextabit.wallet.ui.extensions
 
 import android.content.Context
 import androidx.recyclerview.widget.LinearLayoutManager

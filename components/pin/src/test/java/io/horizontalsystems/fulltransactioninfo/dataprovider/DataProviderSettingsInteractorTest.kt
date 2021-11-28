@@ -1,14 +1,14 @@
-package io.horizontalsystems.bankwallet.modules.fulltransactioninfo.dataprovider
+package io.vextabit.wallet.modules.fulltransactioninfo.dataprovider
 
 import com.google.gson.JsonObject
 import com.nhaarman.mockito_kotlin.any
 import com.nhaarman.mockito_kotlin.verify
 import com.nhaarman.mockito_kotlin.whenever
-import io.horizontalsystems.bankwallet.core.INetworkManager
-import io.horizontalsystems.bankwallet.core.ITransactionDataProviderManager
-import io.horizontalsystems.bankwallet.entities.Coin
-import io.horizontalsystems.bankwallet.entities.CoinType
-import io.horizontalsystems.bankwallet.modules.RxBaseTest
+import io.vextabit.wallet.core.INetworkManager
+import io.vextabit.wallet.core.ITransactionDataProviderManager
+import io.vextabit.wallet.entities.Coin
+import io.vextabit.wallet.entities.CoinType
+import io.vextabit.wallet.modules.RxBaseTest
 import io.reactivex.Flowable
 import org.junit.Before
 import org.junit.Test

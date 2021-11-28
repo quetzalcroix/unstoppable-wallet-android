@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <io.horizontalsystems.bankwallet.ui.extensions.PicassoRoundedImageView
+        <io.vextabit.wallet.ui.extensions.PicassoRoundedImageView
             android:id="@+id/dappIcon"
             android:layout_width="72dp"
             android:layout_height="72dp"

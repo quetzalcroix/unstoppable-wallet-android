@@ -1,4 +1,4 @@
-package io.horizontalsystems.bankwallet.modules.createwallet
+package io.vextabit.wallet.modules.createwallet
 
 import org.junit.Test
 

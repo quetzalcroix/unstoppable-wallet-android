@@ -1,9 +1,9 @@
-package io.horizontalsystems.bankwallet.modules.transactions
+package io.vextabit.wallet.modules.transactions
 
 import com.nhaarman.mockito_kotlin.times
 import com.nhaarman.mockito_kotlin.verify
 import com.nhaarman.mockito_kotlin.whenever
-import io.horizontalsystems.bankwallet.entities.*
+import io.vextabit.wallet.entities.*
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test

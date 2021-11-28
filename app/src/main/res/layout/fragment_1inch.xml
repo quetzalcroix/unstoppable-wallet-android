@@ -31,7 +31,7 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_end="16dp" />
 
-            <io.horizontalsystems.bankwallet.modules.swap.coincard.SwapCoinCardView
+            <io.vextabit.wallet.modules.swap.coincard.SwapCoinCardView
                 android:id="@+id/fromCoinCard"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
                 app:layout_constraintTop_toBottomOf="@id/fromCoinCard"
                 app:tint="@color/grey" />
 
-            <io.horizontalsystems.bankwallet.modules.swap.coincard.SwapCoinCardView
+            <io.vextabit.wallet.modules.swap.coincard.SwapCoinCardView
                 android:id="@+id/toCoinCard"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
                 app:layout_constraintTop_toTopOf="@+id/poweredByTitle"
                 tools:text="0.112 Token" />
 
-            <io.horizontalsystems.bankwallet.modules.swap.allowance.SwapAllowanceView
+            <io.vextabit.wallet.modules.swap.allowance.SwapAllowanceView
                 android:id="@+id/allowanceView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -164,7 +164,7 @@
                 app:layout_constraintStart_toEndOf="@id/approveButton"
                 app:layout_constraintTop_toBottomOf="@+id/commonError" />
 
-            <io.horizontalsystems.bankwallet.modules.swap.allowance.SwapAllowanceStepsView
+            <io.vextabit.wallet.modules.swap.allowance.SwapAllowanceStepsView
                 android:id="@+id/approveStepsView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

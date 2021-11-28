@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:layout_height="wrap_content"
     tools:layout_width="wrap_content"
-    tools:parentTag="io.horizontalsystems.bankwallet.ui.extensions.PriceGradientView">
+    tools:parentTag="io.vextabit.wallet.ui.extensions.PriceGradientView">
 
     <ImageView
         android:id="@+id/gradientImage"

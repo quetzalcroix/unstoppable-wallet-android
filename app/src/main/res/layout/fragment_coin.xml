@@ -16,7 +16,7 @@
         app:navigationIcon="@drawable/ic_back"
         app:titleTextAppearance="@style/Title3" />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.ControlledRecyclerView
+    <io.vextabit.wallet.ui.extensions.ControlledRecyclerView
         android:id="@+id/controlledRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

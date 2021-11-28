@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/actionBarSize">
 
-        <io.horizontalsystems.bankwallet.modules.sendevmtransaction.SendEvmTransactionView
+        <io.vextabit.wallet.modules.sendevmtransaction.SendEvmTransactionView
             android:id="@+id/sendEvmTransactionView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

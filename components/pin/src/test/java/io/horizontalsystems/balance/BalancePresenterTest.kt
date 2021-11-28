@@ -1,4 +1,4 @@
-package io.horizontalsystems.bankwallet.modules.balance
+package io.vextabit.wallet.modules.balance
 
 /*class BalancePresenterTest {
 

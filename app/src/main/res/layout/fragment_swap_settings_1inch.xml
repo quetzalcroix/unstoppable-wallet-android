@@ -28,7 +28,7 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_end="16dp" />
 
-            <io.horizontalsystems.bankwallet.ui.extensions.AddressInputView
+            <io.vextabit.wallet.ui.extensions.AddressInputView
                 android:id="@+id/recipientAddressInputView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:title="@string/SwapSettings_RecipientAddressTitle" />
 
-            <io.horizontalsystems.bankwallet.ui.extensions.InputWithButtonsView
+            <io.vextabit.wallet.ui.extensions.InputWithButtonsView
                 android:id="@+id/slippageInputView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

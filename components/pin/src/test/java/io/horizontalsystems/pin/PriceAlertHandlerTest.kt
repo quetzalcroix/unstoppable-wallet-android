@@ -1,13 +1,13 @@
-package io.horizontalsystems.bankwallet.core.managers
+package io.vextabit.wallet.core.managers
 
 import com.nhaarman.mockito_kotlin.*
-import io.horizontalsystems.bankwallet.core.INotificationFactory
-import io.horizontalsystems.bankwallet.core.INotificationManager
-import io.horizontalsystems.bankwallet.core.IPriceAlertsStorage
-import io.horizontalsystems.bankwallet.core.factories.PriceAlertItem
-import io.horizontalsystems.bankwallet.entities.Coin
-import io.horizontalsystems.bankwallet.entities.CoinType
-import io.horizontalsystems.bankwallet.entities.PriceAlert
+import io.vextabit.wallet.core.INotificationFactory
+import io.vextabit.wallet.core.INotificationManager
+import io.vextabit.wallet.core.IPriceAlertsStorage
+import io.vextabit.wallet.core.factories.PriceAlertItem
+import io.vextabit.wallet.entities.Coin
+import io.vextabit.wallet.entities.CoinType
+import io.vextabit.wallet.entities.PriceAlert
 import junit.framework.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test

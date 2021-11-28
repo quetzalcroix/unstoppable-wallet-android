@@ -9,7 +9,7 @@ object KeyboardHelper {
 
     private fun showKeyboard(context: Context) {
         val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
-        imm?.toggleSoftInput(InputMethodManager.SHOW_IMPLICIT, InputMethodManager.HIDE_IMPLICIT_ONLY);
+        imm?.toggleSoftInput(InputMethodManager.SHOW_IMPLICIT, InputMethodManager.HIDE_IMPLICIT_ONLY)
     }
 
     fun showKeyboard(context: Context, view: View?) {
@@ -23,7 +23,7 @@ object KeyboardHelper {
 
     fun hideKeyboard(context: Context, view: View?) {
         val imm = context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager?
-        imm?.hideSoftInputFromWindow(view?.getWindowToken(), 0)
+        imm?.hideSoftInputFromWindow(view?.windowToken, 0)
     }
 
 }

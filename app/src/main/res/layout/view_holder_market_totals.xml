@@ -8,7 +8,7 @@
     android:layout_marginTop="12dp"
     android:layout_marginEnd="16dp">
 
-    <io.horizontalsystems.bankwallet.ui.extensions.PriceGradientView
+    <io.vextabit.wallet.ui.extensions.PriceGradientView
         android:id="@+id/diffCircle"
         android:layout_width="44dp"
         android:layout_height="44dp"
@@ -79,7 +79,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/marketCapTitle" />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.MarketMetricSmallView
+    <io.vextabit.wallet.ui.extensions.MarketMetricSmallView
         android:id="@+id/btcDominance"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
         app:title="@string/Market_BtcDominance"
         tools:value="69.09%" />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.MarketMetricSmallView
+    <io.vextabit.wallet.ui.extensions.MarketMetricSmallView
         android:id="@+id/volume24h"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -102,7 +102,7 @@
         app:title="@string/Market_Volume24h"
         tools:value="$167.84B" />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.MarketMetricSmallView
+    <io.vextabit.wallet.ui.extensions.MarketMetricSmallView
         android:id="@+id/defiCap"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
         app:title="@string/Market_DeFiCap"
         tools:value="$167.84B" />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.MarketMetricSmallView
+    <io.vextabit.wallet.ui.extensions.MarketMetricSmallView
         android:id="@+id/defiTvl"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

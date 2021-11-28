@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/privacySettingsFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.settings.security.privacy.PrivacySettingsFragment"
+        android:name="io.vextabit.wallet.modules.settings.security.privacy.PrivacySettingsFragment"
         android:label="@string/SettingsSecurity_Privacy"
         tools:layout="@layout/fragment_settings_privacy">
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/privacySettingsInfoFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.settings.security.privacy.PrivacySettingsInfoFragment"
+        android:name="io.vextabit.wallet.modules.settings.security.privacy.PrivacySettingsInfoFragment"
         android:label="@string/Welcome_PrivacySettings"
         tools:layout="@layout/fragment_privacy_settings_info" />
 

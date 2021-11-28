@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.PicassoRoundedImageView
+    <io.vextabit.wallet.ui.extensions.PicassoRoundedImageView
         android:id="@+id/icon"
         android:layout_width="24dp"
         android:layout_height="24dp"

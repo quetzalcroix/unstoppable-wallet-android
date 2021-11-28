@@ -11,7 +11,7 @@ android {
     compileSdkVersion compile_sdk_version
 
     defaultConfig {
-        applicationId "io.horizontalsystems.bankwallet"
+        applicationId "io.vextabit.wallet"
         minSdkVersion min_sdk_version
         targetSdkVersion compile_sdk_version
         versionCode 52
@@ -56,8 +56,8 @@ android {
             resValue "string", "is_release", "false"
             resValue "string", "guidesUrl", "https://raw.githubusercontent.com/horizontalsystems/blockchain-crypto-guides/develop/index.json"
             resValue "string", "faqUrl", "https://raw.githubusercontent.com/horizontalsystems/Unstoppable-Wallet-Website/master/src/faq.json"
-            resValue "string", "coinsJsonUrl", "https://raw.githubusercontent.com/horizontalsystems/cryptocurrencies/master/coins.json"
-            resValue "string", "providerCoinsJsonUrl", "https://raw.githubusercontent.com/horizontalsystems/cryptocurrencies/master/provider.coins.json"
+            resValue "string", "coinsJsonUrl", "https://raw.githubusercontent.com/quetzalcroix/cryptocurrencies/master/coins.json"
+            resValue "string", "providerCoinsJsonUrl", "https://raw.githubusercontent.com/quetzalcroix/cryptocurrencies/master/provider.coins.json"
         }
 
         apptestnet {
@@ -90,8 +90,8 @@ android {
             resValue "string", "is_release", "true"
             resValue "string", "guidesUrl", "https://raw.githubusercontent.com/horizontalsystems/blockchain-crypto-guides/v1.1/index.json"
             resValue "string", "faqUrl", "https://raw.githubusercontent.com/horizontalsystems/Unstoppable-Wallet-Website/v1.1/src/faq.json"
-            resValue "string", "coinsJsonUrl", "https://raw.githubusercontent.com/horizontalsystems/cryptocurrencies/v0.21/coins.json"
-            resValue "string", "providerCoinsJsonUrl", "https://raw.githubusercontent.com/horizontalsystems/cryptocurrencies/v0.21/provider.coins.json"
+            resValue "string", "coinsJsonUrl", "https://raw.githubusercontent.com/quetzalcroix/cryptocurrencies/master/coins.json"
+            resValue "string", "providerCoinsJsonUrl", "https://raw.githubusercontent.com/quetzalcroix/cryptocurrencies/master/provider.coins.json"
         }
 
     }

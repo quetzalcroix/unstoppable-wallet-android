@@ -6,7 +6,7 @@
     app:startDestination="@+id/walletConnectListFragment">
     <fragment
         android:id="@+id/walletConnectListFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.walletconnect.list.WalletConnectListFragment"
+        android:name="io.vextabit.wallet.modules.walletconnect.list.WalletConnectListFragment"
         tools:layout="@layout/fragment_wallet_connect_list">
         <action
             android:id="@+id/walletConnectListFragment_to_walletConnectMainFragment"
@@ -14,7 +14,7 @@
     </fragment>
     <fragment
         android:id="@+id/walletConnectMainFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.walletconnect.main.WalletConnectMainFragment"
+        android:name="io.vextabit.wallet.modules.walletconnect.main.WalletConnectMainFragment"
         tools:layout="@layout/fragment_wallet_connect_main">
         <action
             android:id="@+id/walletConnectMainFragment_to_walletConnectErrorFragment"
@@ -38,11 +38,11 @@
     </fragment>
     <fragment
         android:id="@+id/walletConnectErrorFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.walletconnect.WalletConnectErrorFragment"
+        android:name="io.vextabit.wallet.modules.walletconnect.WalletConnectErrorFragment"
         tools:layout="@layout/fragment_wallet_connect_error" />
     <fragment
         android:id="@+id/walletConnectSendEthereumTransactionRequestFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.walletconnect.request.sendtransaction.WalletConnectSendEthereumTransactionRequestFragment"
+        android:name="io.vextabit.wallet.modules.walletconnect.request.sendtransaction.WalletConnectSendEthereumTransactionRequestFragment"
         tools:layout="@layout/fragment_wallet_connect_request">
         <action
             android:id="@+id/walletConnectRequestFragment_to_feeSpeedInfo"
@@ -50,7 +50,7 @@
     </fragment>
     <fragment
         android:id="@+id/walletConnectSignMessageRequestFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.walletconnect.request.signmessage.WalletConnectSignMessageRequestFragment"
+        android:name="io.vextabit.wallet.modules.walletconnect.request.signmessage.WalletConnectSignMessageRequestFragment"
         tools:layout="@layout/fragment_wallet_connect_sign_message_request">
         <action
             android:id="@+id/walletConnectSignMessageRequestFragment_to_walletConnectDisplayTypedMessageFragment"
@@ -58,6 +58,6 @@
     </fragment>
     <fragment
         android:id="@+id/walletConnectDisplayTypedMessageFragment"
-        android:name="io.horizontalsystems.bankwallet.modules.walletconnect.request.signmessage.WalletConnectDisplayTypedMessageFragment"
+        android:name="io.vextabit.wallet.modules.walletconnect.request.signmessage.WalletConnectDisplayTypedMessageFragment"
         tools:layout="@layout/fragment_wallet_connect_display_typed_message" />
 </navigation>

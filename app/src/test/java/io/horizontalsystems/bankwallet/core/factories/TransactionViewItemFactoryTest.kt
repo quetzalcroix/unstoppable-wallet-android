@@ -1,4 +1,4 @@
-package io.horizontalsystems.bankwallet.core.factories
+package io.vextabit.wallet.core.factories
 
 //class TransactionViewItemFactoryTest {
 //

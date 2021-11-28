@@ -21,7 +21,7 @@
         app:tabPaddingEnd="12dp"
         app:tabPaddingStart="0dp" />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.MarketListHeaderView
+    <io.vextabit.wallet.ui.extensions.MarketListHeaderView
         android:id="@+id/marketListHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

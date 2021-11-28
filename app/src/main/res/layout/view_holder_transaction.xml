@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <io.horizontalsystems.bankwallet.ui.extensions.RotatingCircleProgressView
+    <io.vextabit.wallet.ui.extensions.RotatingCircleProgressView
         android:id="@+id/iconProgress"
         android:layout_width="41dp"
         android:layout_height="41dp"

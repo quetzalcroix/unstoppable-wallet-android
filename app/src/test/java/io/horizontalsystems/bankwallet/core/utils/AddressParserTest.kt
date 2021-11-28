@@ -1,6 +1,6 @@
-package io.horizontalsystems.bankwallet.core.utils
+package io.vextabit.wallet.core.utils
 
-import io.horizontalsystems.bankwallet.entities.AddressData
+import io.vextabit.wallet.entities.AddressData
 import org.junit.Assert
 import org.junit.Test
 

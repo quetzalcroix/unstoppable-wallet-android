@@ -48,7 +48,7 @@
                 tools:text="Info description"
                 />
 
-            <io.horizontalsystems.bankwallet.modules.transactionInfo.TransactionInfoItemView
+            <io.vextabit.wallet.modules.transactionInfo.TransactionInfoItemView
                 android:id="@+id/itemTxHash"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
@@ -60,7 +60,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textDescription"
                 />
 
-            <io.horizontalsystems.bankwallet.modules.transactionInfo.TransactionInfoItemView
+            <io.vextabit.wallet.modules.transactionInfo.TransactionInfoItemView
                 android:id="@+id/itemConflictingTxHash"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
