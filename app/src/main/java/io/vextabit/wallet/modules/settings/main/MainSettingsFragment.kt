@@ -74,19 +74,19 @@ class MainSettingsFragment : BaseFragment() {
                 manageKeys,
                 privacySettings,
                 null,
-                walletConnect,
-                null,
+//                walletConnect,
+//                null,
                 notifications,
                 baseCurrency,
                 language,
                 theme,
-                experimentalFeatures,
+//                experimentalFeatures,
                 null,
                 faq,
                 academy,
                 null,
                 aboutApp,
-                settingsBottom
+//                settingsBottom
         ))
 
         settingsRecyclerView.adapter = mainSettingsAdapter

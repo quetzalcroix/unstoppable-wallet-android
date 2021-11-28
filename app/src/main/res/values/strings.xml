@@ -11,7 +11,7 @@
     <string name="Alert_Skip" translatable="false">SKIP</string>
     <string name="Alert_Select" translatable="false">SELECT</string>
 
-    <string name="Action_Undo">UNDO</string>
+    <string name="Action_Undo" translatable="false">UNDO</string>
 
     <string name="Button_Cancel">Cancel</string>
     <string name="Button_Next">Next</string>
@@ -40,7 +40,7 @@
 
     <!--Intro-->
 
-    <string name="Intro_Wallet_Screen1Description">Fully Decentralized</string>
+    <string name="Intro_Wallet_Screen1Description">Welcome</string>
     <string name="Intro_Wallet_Screen2Title">Unbound Cryptoassets</string>
     <string name="Intro_Wallet_Screen2Description">Your Cryptoassets are fully yours.</string>
     <string name="Intro_Wallet_Screen3Title">Unbordered Movement</string>
@@ -70,7 +70,7 @@
 
     <!--Rate App-->
     <string name="RateApp_Title_Rate_This_App">Rate this App</string>
-    <string name="RateApp_Description_Rate_This_App">Enjoying Unstoppable Wallet? Please take a moment to rate this app</string>
+    <string name="RateApp_Description_Rate_This_App">Enjoying Vextabit wallet? Please take a moment to rate this app</string>
     <string name="RateApp_Button_RateIt">Rate It</string>
     <string name="RateApp_Button_NotNow">Not now</string>
 
@@ -533,7 +533,7 @@
     <string name="SettingsCurrency_Title">Base Currency</string>
     <string name="SettingsCurrency_Other">OTHER</string>
     <string name="SettingsCurrency_DisclaimerTitle">Disclaimer</string>
-    <string name="SettingsCurrency_DisclaimerText">The exchange rate data provided by a third party service Coingecko.com\n\nUnstoppable wallet app doesn\'t guarantee these values are always correct and match market data. The chance for inconsistency is higher if you select any base currency other than %s.</string>
+    <string name="SettingsCurrency_DisclaimerText">The exchange rate data provided by a third party service Coingecko.com\n\nVextabit wallet app doesn\'t guarantee these values are always correct and match market data. The chance for inconsistency is higher if you select any base currency other than %s.</string>
     <string name="SettingsCurrency_Understand">I Understand</string>
 
     <!--Settings-->
@@ -547,9 +547,9 @@
     <string name="Settings_Theme">Theme</string>
     <string name="Settings_Terms">Terms</string>
     <string name="Settings_ShareThisWallet">Tell Friends</string>
-    <string name="Settings_InfoTitleWithVersion" translatable="false">Unstoppable %s</string>
+    <string name="Settings_InfoTitleWithVersion" translatable="false">Vextabit allet %s</string>
     <string name="Settings_InfoSubtitle" translatable="false">decentralized app</string>
-    <string name="Settings_CompanyName" translatable="false">horizontal systems</string>
+    <string name="Settings_CompanyName" translatable="false">Vextabit</string>
     <string name="Settings_Faq">FAQ</string>
     <string name="Settings_AppStatus">App Status</string>
     <string name="Settings_WalletConnect">Wallet Connect</string>
@@ -572,7 +572,7 @@
     <string name="SettingsPrivacy_Info_BlockchainTx_Title">Blockchain Transactions</string>
     <string name="SettingsPrivacy_Info_BlockchainTx_Description">This setting controls the privacy level of user\'s transactions on Bitcoin, Bitcoin Cash and Litecoin blockchains.
         \n\nMost Bitcoin transactions generate two outputs. One output is the amount that goes to the receiver and the other is the change output that is returned to the sender. The way most wallets construct transactions makes it easy for a third party monitoring Bitcoin blockchain to understand which of the outputs went to the receiving party and which one was the change amount returned to the sender. The output returned to the sender can then be used in future transactions and further reveal the details to the monitoring party.
-        \n\nUnstoppable wallet implements measures to makes it significantly harder to figure out which output goes where. There are two options available to Unstoppable users:
+        \n\nVextabit wallet implements measures to makes it significantly harder to figure out which output goes where. There are two options available to Unstoppable users:
         \n\n1. Shuffle : The order of transaction outputs are randomized on every transaction. Sometimes change can be the first output, sometimes it can be the second. If a user trusts the developer of the app, than consider this a recommended option.
         \n\n2. Deterministic : There is a commonly agreed standard for ordering transaction outputs (known as BIP69). In open source wallets that standard ensures that wallet users do not need to trust how developers of the app implement the ordering of the outputs. As this standard is new, not many wallets have implemented it yet. As a result, it\'s somewhat possible to see on the blockchain whether transaction was sent from the wallet that uses that standard or not.</string>
     <string name="SettingsPrivacy_Info_BlockchainConnection_Title">Blockchain Sync</string>
@@ -594,9 +594,9 @@
     <string name="SettingsSecurity_EnablePin">Passcode</string>
     <string name="SettingsSecurity_EditPin">Edit Passcode</string>
     <string name="SettingsSecurity_ManageKeys">Manage Wallets</string>
-    <string name="SettingsSecurity_AppRestartWarning">This action will restart Unstoppable Wallet.</string>
+    <string name="SettingsSecurity_AppRestartWarning">This action will restart Vextabit wallet.</string>
     <string name="SettingsSecurity_TorConnectionDescription">Fully anonymize your internet while using this app. Note, in some cases WalletConnect feature for DeFi apps may be very slow or not work at all.</string>
-    <string name="SettingsSecurity_NotificationsDisabledWarning">The notifications for Unstoppable Wallet app are disabled. You need to turn them on in order for Tor to work.</string>
+    <string name="SettingsSecurity_NotificationsDisabledWarning">The notifications for Vextabit wallet app are disabled. You need to turn them on in order for Tor to work.</string>
     <string name="SettingsSecurity_SortingShuffle">Shuffle</string>
     <string name="SettingsSecurity_SortingShuffleDescription">Random Indexing</string>
     <string name="SettingsSecurity_SortingBip69">Deterministic BIP69</string>
@@ -608,12 +608,12 @@
 
     <!--Setting_Terms-->
 
-    <string name="SettingsTerms_Text">The Unstoppable wallet is built for those looking to invest and store cryptocurrencies in a private and independent manner.
+    <string name="SettingsTerms_Text">The Vextabit wallet is built for those looking to invest and store cryptocurrencies in a private and independent manner.
 \n\nIt\'s a non-custodial, peer-to-peer wallet where only the user has control over funds. It doesn\'t collect any data and keeps user independent by not locking his/her wallet to a specific wallet app.
-\n\nThe Unstoppable wallet is fully open-source and anyone can confirm that the app works exactly as it claims to.
+\n\nThe Vextabit wallet is fully open-source and anyone can confirm that the app works exactly as it claims to.
 \n\nWe built Unstoppable for ourselves as the available solutions were not up to par. Both from engineering and usability perspective we believe this wallet to be significantly ahead of alternative products.</string>
     <string name="SettingsTerms_TermAcademy">I went through the Academy section of this app and got familiar with the fundamental aspects of storing cryptocurrencies.</string>
-    <string name="SettingsTerms_TermBackup">I have backed up the private key(s) for my wallets that were shown to me in a form of 12-24 words. I understand that these private keys are stored on my smartphone and not elsewhere.</string>
+    <string name="SettingsTerms_TermBackup">I have backed up the private key(s) for my wallets that were shown to me in a form of 12–24 words. I understand that these private keys are stored on my smartphone and not elsewhere.</string>
     <string name="SettingsTerms_TermOwner">I understand that passing my phone to untrusted entities and leaving the wallet app without safe PIN lock may potentially endanger the safety of my funds.</string>
     <string name="SettingsTerms_TermRecover">I understand that jail breaking (rooting) my phone, installing third party apps from unknown sources, keeping the operating system outdated can potentially endanger the safety of my funds.</string>
     <string name="SettingsTerms_TermPhone">I understand there may be undiscovered software issues in the code powering this wallet app which may potentially lead to unexpected behavior or the app malfunctioning.</string>
@@ -635,7 +635,7 @@
     <!--Setting_Notifications-->
 
     <string name="SettingsNotifications_Description">Set price change alerts for the coins you would like to watch.\n\nYou will be alerted when the change in price for the last 24 hours exceeds selected threshold.\n\nPrice Trend Alert warns of a trend change for the short 1 week, for the long 6 month.</string>
-    <string name="SettingsNotifications_NotificationsDisabledWarning">The notifications for Unstoppable Wallet app are disabled. You need to turn them on in order to be able to receive price change alerts.</string>
+    <string name="SettingsNotifications_NotificationsDisabledWarning">The notifications for Vextabit wallet app are disabled. You need to turn them on in order to be able to receive price change alerts.</string>
     <string name="SettingsNotifications_TurnOn">Turn on in Settings</string>
     <string name="SettingsNotifications_Off">Off</string>
     <string name="SettingsNotifications_DeactivateAll">Reset All</string>
@@ -697,7 +697,7 @@
 
     <string name="BitcoinHodling_Title">TimeLock</string>
     <string name="BitcoinHodling_LockTime" translatable="false">Activate</string>
-    <string name="BitcoinHodling_Description">Enables you to send Bitcoins that can not be spent until specified date.\n\nThe receiver of such transaction should use Unstoppable wallet app version 0.10 or newer with BIP44 address format for the Bitcoin.\n\nOnly Unstoppable wallet can correctly identify such transactions on Bitcoin network as well as enable receiver to spend those Bitcoins after the lock period expires.\n\nIf you’re a HODLer, you may use this feature to force yourself into hodling your Bitcoins by sending such transaction to yourself.\n\nBeing an experimental feature the maximum amount per transaction is limited to 0.5 BTC.</string>
+    <string name="BitcoinHodling_Description">Enables you to send Bitcoins that can not be spent until specified date.\n\nThe receiver of such transaction should use Vextabit wallet app version 0.10 or newer with BIP44 address format for the Bitcoin.\n\nOnly Vextabit wallet can correctly identify such transactions on Bitcoin network as well as enable receiver to spend those Bitcoins after the lock period expires.\n\nIf you’re a HODLer, you may use this feature to force yourself into hodling your Bitcoins by sending such transaction to yourself.\n\nBeing an experimental feature the maximum amount per transaction is limited to 0.5 BTC.</string>
 
     <!--Manage Accounts-->
     <string name="ManageAccounts_Title">Manage Wallets</string>

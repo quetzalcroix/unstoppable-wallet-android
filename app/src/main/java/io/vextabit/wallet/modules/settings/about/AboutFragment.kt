@@ -75,18 +75,18 @@ class AboutFragment : BaseFragment() {
         }
 
         val menuItemsAdapter = MainSettingsAdapter(listOf(
-                whatsNewItem,
-                null,
+//                whatsNewItem,
+//                null,
                 appStatusItem,
                 termsItem,
                 null,
-                githubItem,
+//                githubItem,
                 websiteItem,
                 null,
-                rateUsItem,
-                shareAppItem,
+//                rateUsItem,
+//                shareAppItem,
                 null,
-                contactItem,
+//                contactItem,
         ))
 
         val headerAdapter = AboutAppHeaderAdapter(getAppVersion())

@@ -126,7 +126,6 @@ class RestoreMnemonicFragment : BaseFragment() {
     private fun bindListeners() {
         wordsInput.addTextChangedListener(textWatcher)
 
-        //fixes scrolling in EditText when it's inside NestedScrollView
         wordsInput.setOnTouchListener { v, event ->
             if (wordsInput.hasFocus()) {
                 v.parent.requestDisallowInterceptTouchEvent(true)

@@ -36,7 +36,7 @@ class MainActivity : BaseActivity() {
                    If the event is TRIM_MEMORY_RUNNING_CRITICAL, then the system will
                    begin killing background processes.
                 */
-                if (io.vextabit.wallet.core.App.backgroundManager.inBackground) {
+                if (App.backgroundManager.inBackground) {
                     val logger = AppLogger("low memory")
                     logger.info("Kill activity due to low memory, level: $level")
                     finishAffinity()
