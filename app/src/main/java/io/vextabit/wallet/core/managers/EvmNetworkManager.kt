@@ -18,8 +18,8 @@ class EvmNetworkManager(private val appConfigProvider: IAppConfigProvider) {
 
     val binanceSmartChainNetworks: List<EvmNetwork>
         get() = listOfNotNull(
-            defaultHttpNetwork("MainNet HTTP", EthereumKit.NetworkType.BscMainNet),
             defaultWebsocketNetwork("MainNet Websocket", EthereumKit.NetworkType.BscMainNet),
+            defaultHttpNetwork("MainNet HTTP", EthereumKit.NetworkType.BscMainNet),
         )
 
     private fun defaultHttpSyncSource(networkType: EthereumKit.NetworkType): EthereumKit.SyncSource? =

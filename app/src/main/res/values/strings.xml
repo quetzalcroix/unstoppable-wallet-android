@@ -41,12 +41,12 @@
     <!--Intro-->
 
     <string name="Intro_Wallet_Screen1Description">Welcome</string>
-    <string name="Intro_Wallet_Screen2Title">Unbound Cryptoassets</string>
-    <string name="Intro_Wallet_Screen2Description">Your Cryptoassets are fully yours.</string>
+    <string name="Intro_Wallet_Screen2Title">Safe Storage</string>
+    <string name="Intro_Wallet_Screen2Description">Your Cryptoassets are always safe by your hands</string>
     <string name="Intro_Wallet_Screen3Title">Unbordered Movement</string>
-    <string name="Intro_Wallet_Screen3Description">Become fully decentralized solution for all.</string>
-    <string name="Intro_Wallet_Screen4Title">Stay Private</string>
-    <string name="Intro_Wallet_Screen4Description">Privacy is top priority.</string>
+    <string name="Intro_Wallet_Screen3Description">Bring your Cryptoassets everywhere you go using Vextabit wallet</string>
+    <string name="Intro_Wallet_Screen4Title">Privacy Focused</string>
+    <string name="Intro_Wallet_Screen4Description">We are prioritized privacy over Cryptoassets</string>
 
     <!--Rooted Device-->
 
@@ -547,7 +547,7 @@
     <string name="Settings_Theme">Theme</string>
     <string name="Settings_Terms">Terms</string>
     <string name="Settings_ShareThisWallet">Tell Friends</string>
-    <string name="Settings_InfoTitleWithVersion" translatable="false">Vextabit allet %s</string>
+    <string name="Settings_InfoTitleWithVersion" translatable="false">Vextabit Wallet %s</string>
     <string name="Settings_InfoSubtitle" translatable="false">decentralized app</string>
     <string name="Settings_CompanyName" translatable="false">Vextabit</string>
     <string name="Settings_Faq">FAQ</string>

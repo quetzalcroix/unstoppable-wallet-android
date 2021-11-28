@@ -772,4 +772,5 @@
     <string name="BalanceSyncError_ButtonReport">报告</string>
     <!--Release notes-->
     <string name="ReleaseNotes_FollowUs">关注我们</string>
+    <string name="FooterText" translatable="false">Vextabit Wallet 2021</string>
 </resources>
