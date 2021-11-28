@@ -3,9 +3,9 @@ package io.vextabit.wallet.core.managers
 import android.content.Context
 import io.vextabit.wallet.core.IAppConfigProvider
 import io.vextabit.wallet.core.IRateManager
-import io.horizontalsystems.coinkit.models.CoinType
-import io.horizontalsystems.xrateskit.XRatesKit
-import io.horizontalsystems.xrateskit.entities.*
+import io.vextabit.coinkit.models.CoinType
+import io.vextabit.xrateskit.XRatesKit
+import io.vextabit.xrateskit.entities.*
 import io.reactivex.Observable
 import io.reactivex.Single
 import java.math.BigDecimal

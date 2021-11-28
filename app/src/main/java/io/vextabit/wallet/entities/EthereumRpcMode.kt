@@ -1,7 +1,7 @@
 package io.vextabit.wallet.entities
 
 import android.os.Parcelable
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize

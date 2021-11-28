@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import io.vextabit.wallet.core.Clearable
 import io.vextabit.wallet.core.subscribeIO
 import io.vextabit.wallet.entities.Account
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.SingleLiveEvent
 import io.reactivex.disposables.CompositeDisposable
 

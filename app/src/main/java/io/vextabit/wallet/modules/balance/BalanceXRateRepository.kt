@@ -2,9 +2,9 @@ package io.vextabit.wallet.modules.balance
 
 import io.vextabit.wallet.core.IRateManager
 import io.vextabit.wallet.core.subscribeIO
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.ICurrencyManager
-import io.horizontalsystems.xrateskit.entities.LatestRate
+import io.vextabit.xrateskit.entities.LatestRate
 import io.reactivex.Observable
 import io.reactivex.disposables.Disposable
 import io.reactivex.subjects.PublishSubject

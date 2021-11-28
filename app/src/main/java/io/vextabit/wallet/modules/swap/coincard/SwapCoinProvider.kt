@@ -8,8 +8,8 @@ import io.vextabit.wallet.entities.CurrencyValue
 import io.vextabit.wallet.modules.swap.SwapMainModule.Blockchain
 import io.vextabit.wallet.modules.swap.SwapMainModule.CoinBalanceItem
 import io.vextabit.wallet.modules.swap.SwapMainModule.Dex
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.ICurrencyManager
 import java.math.BigDecimal
 import java.util.*

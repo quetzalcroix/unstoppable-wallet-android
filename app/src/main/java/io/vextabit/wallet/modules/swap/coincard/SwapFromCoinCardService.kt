@@ -3,7 +3,7 @@ package io.vextabit.wallet.modules.swap.coincard
 import io.vextabit.wallet.modules.swap.SwapMainModule
 import io.vextabit.wallet.modules.swap.SwapMainModule.AmountType
 import io.vextabit.wallet.modules.swap.SwapMainModule.SwapError
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.reactivex.Observable
 import java.math.BigDecimal
 import java.util.*

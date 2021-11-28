@@ -7,7 +7,7 @@ import android.widget.ImageView
 import androidx.annotation.CheckResult
 import io.vextabit.wallet.R
 import io.vextabit.wallet.ui.helpers.AppLayoutHelper
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.ethereumkit.core.toRawHexString
 import io.horizontalsystems.hodler.LockTimeInterval
 import io.horizontalsystems.views.SingleClickListener

@@ -6,7 +6,7 @@ import io.vextabit.wallet.core.AdapterState
 import io.vextabit.wallet.core.App
 import io.vextabit.wallet.core.BalanceData
 import io.vextabit.wallet.entities.Wallet
-import io.horizontalsystems.xrateskit.entities.LatestRate
+import io.vextabit.xrateskit.entities.LatestRate
 
 object BalanceModule {
 

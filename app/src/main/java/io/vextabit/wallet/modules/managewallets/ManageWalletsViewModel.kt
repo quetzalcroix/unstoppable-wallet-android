@@ -6,7 +6,7 @@ import io.vextabit.wallet.core.Clearable
 import io.vextabit.wallet.core.subscribeIO
 import io.vextabit.wallet.ui.extensions.coinlist.CoinViewItem
 import io.vextabit.wallet.ui.extensions.coinlist.CoinViewState
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.views.ListPosition
 import io.reactivex.disposables.CompositeDisposable
 

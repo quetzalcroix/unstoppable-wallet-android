@@ -4,7 +4,7 @@ import io.vextabit.wallet.modules.swap.SwapMainModule
 import io.vextabit.wallet.modules.swap.SwapMainModule.AmountType
 import io.vextabit.wallet.modules.swap.providers.UniswapProvider
 import io.vextabit.wallet.modules.swap.settings.uniswap.SwapTradeOptions
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.ethereumkit.core.EthereumKit
 import io.horizontalsystems.ethereumkit.models.TransactionData
 import io.horizontalsystems.uniswapkit.models.SwapData

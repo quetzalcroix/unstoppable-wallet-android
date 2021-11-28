@@ -6,7 +6,7 @@ import io.vextabit.wallet.core.Clearable
 import io.vextabit.wallet.core.convertedError
 import io.vextabit.wallet.core.subscribeIO
 import io.vextabit.wallet.modules.swap.settings.Caution
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.SingleLiveEvent
 import io.reactivex.disposables.CompositeDisposable
 

@@ -11,7 +11,7 @@ import io.vextabit.wallet.R
 import io.vextabit.wallet.core.App
 import io.horizontalsystems.views.ListPosition
 import io.horizontalsystems.views.helpers.LayoutHelper
-import io.horizontalsystems.xrateskit.entities.TimePeriod
+import io.vextabit.xrateskit.entities.TimePeriod
 import java.math.BigDecimal
 
 class CoinPerformanceRowView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0)

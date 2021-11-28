@@ -2,7 +2,7 @@ package io.vextabit.wallet.modules.send.submodules.fee
 
 import io.vextabit.wallet.core.IAppConfigProvider
 import io.vextabit.wallet.modules.send.submodules.amount.SendAmountInfo
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import java.math.BigDecimal
 
 class FeeRateAdjustmentHelper(private val appConfigProvider: IAppConfigProvider) {

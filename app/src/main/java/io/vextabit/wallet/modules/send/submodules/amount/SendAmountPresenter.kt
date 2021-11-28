@@ -12,7 +12,7 @@ import io.vextabit.wallet.modules.send.SendModule.AmountInfo.CurrencyValueInfo
 import io.vextabit.wallet.modules.send.submodules.amount.SendAmountModule.ValidationError.InsufficientBalance
 import io.vextabit.wallet.modules.send.submodules.amount.SendAmountModule.ValidationError.TooFewAmount
 import io.vextabit.wallet.ui.extensions.AmountInputView
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.entities.Currency
 import java.math.BigDecimal
 import java.math.RoundingMode

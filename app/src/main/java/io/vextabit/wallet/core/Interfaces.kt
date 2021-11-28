@@ -17,14 +17,14 @@ import io.vextabit.wallet.modules.swap.SwapMainModule
 import io.vextabit.wallet.modules.transactions.TransactionWallet
 import io.horizontalsystems.binancechainkit.BinanceChainKit
 import io.horizontalsystems.bitcoincore.core.IPluginData
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.entities.AppVersion
 import io.horizontalsystems.core.entities.Currency
 import io.horizontalsystems.ethereumkit.core.EthereumKit
 import io.horizontalsystems.ethereumkit.models.Address
 import io.horizontalsystems.ethereumkit.models.TransactionData
-import io.horizontalsystems.xrateskit.entities.*
+import io.vextabit.xrateskit.entities.*
 import io.reactivex.Flowable
 import io.reactivex.Observable
 import io.reactivex.Single

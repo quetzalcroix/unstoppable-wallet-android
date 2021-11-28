@@ -7,7 +7,7 @@ import io.vextabit.wallet.core.managers.AccountSettingManager
 import io.vextabit.wallet.entities.Account
 import io.vextabit.wallet.entities.CurrencyValue
 import io.vextabit.wallet.entities.LastBlockInfo
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.IBuildConfigProvider
 import io.horizontalsystems.core.ICurrencyManager
 import io.horizontalsystems.ethereumkit.core.EthereumKit

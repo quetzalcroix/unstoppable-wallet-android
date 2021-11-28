@@ -4,8 +4,8 @@ import io.vextabit.wallet.core.IAddTokenBlockchainService
 import io.vextabit.wallet.core.IAppConfigProvider
 import io.vextabit.wallet.core.INetworkManager
 import io.vextabit.wallet.entities.ApiError
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.ethereumkit.core.AddressValidator
 import io.horizontalsystems.ethereumkit.core.EthereumKit
 import io.reactivex.Single

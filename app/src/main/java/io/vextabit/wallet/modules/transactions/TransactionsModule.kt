@@ -13,7 +13,7 @@ import io.vextabit.wallet.entities.Wallet
 import io.vextabit.wallet.entities.transactionrecords.TransactionRecord
 import io.vextabit.wallet.entities.transactionrecords.bitcoin.TransactionLockState
 import io.vextabit.wallet.modules.transactionInfo.TransactionInfoAddressMapper
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.entities.Currency
 import java.math.BigDecimal
 import java.util.*

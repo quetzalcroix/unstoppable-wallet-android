@@ -3,8 +3,8 @@ package io.vextabit.wallet.core.factories
 import io.vextabit.wallet.core.App
 import io.vextabit.wallet.core.IFeeRateProvider
 import io.vextabit.wallet.core.providers.*
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 
 object FeeRateProviderFactory {
     private val feeRateProvider = io.vextabit.wallet.core.App.feeRateProvider

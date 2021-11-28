@@ -12,8 +12,8 @@ import io.vextabit.wallet.modules.sendevmtransaction.ISendEvmTransactionService
 import io.vextabit.wallet.modules.sendevmtransaction.SendEvmTransactionService
 import io.vextabit.wallet.modules.swap.oneinch.scaleUp
 import io.vextabit.wallet.modules.swap.settings.oneinch.OneInchSwapSettingsModule
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.ethereumkit.contracts.Bytes32Array
 import io.horizontalsystems.ethereumkit.core.EthereumKit
 import io.horizontalsystems.ethereumkit.models.Address

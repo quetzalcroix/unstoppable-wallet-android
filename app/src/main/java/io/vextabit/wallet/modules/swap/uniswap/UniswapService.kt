@@ -8,7 +8,7 @@ import io.vextabit.wallet.modules.swap.allowance.SwapAllowanceService
 import io.vextabit.wallet.modules.swap.allowance.SwapPendingAllowanceService
 import io.vextabit.wallet.modules.swap.allowance.SwapPendingAllowanceState
 import io.vextabit.wallet.modules.swap.uniswap.UniswapTradeService.PriceImpactLevel
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.ethereumkit.models.TransactionData
 import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable

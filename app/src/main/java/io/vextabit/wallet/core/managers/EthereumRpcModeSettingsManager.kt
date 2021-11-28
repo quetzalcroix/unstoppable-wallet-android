@@ -6,7 +6,7 @@ import io.vextabit.wallet.core.IEthereumRpcModeSettingsManager
 import io.vextabit.wallet.core.IWalletManager
 import io.vextabit.wallet.entities.CommunicationMode
 import io.vextabit.wallet.entities.EthereumRpcMode
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 
 class EthereumRpcModeSettingsManager(
         private val blockchainSettingsStorage: IBlockchainSettingsStorage,

@@ -3,7 +3,7 @@ package io.vextabit.wallet.modules.market.posts
 import io.vextabit.wallet.core.Clearable
 import io.vextabit.wallet.core.IRateManager
 import io.horizontalsystems.core.BackgroundManager
-import io.horizontalsystems.xrateskit.entities.CryptoNews
+import io.vextabit.xrateskit.entities.CryptoNews
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.BehaviorSubject

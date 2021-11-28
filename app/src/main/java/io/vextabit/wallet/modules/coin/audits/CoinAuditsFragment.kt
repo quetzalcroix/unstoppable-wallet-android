@@ -12,7 +12,7 @@ import io.vextabit.wallet.modules.coin.adapters.CoinInfoErrorAdapter
 import io.vextabit.wallet.modules.coin.tvlrank.TvlRankLoadingAdapter
 import io.vextabit.wallet.modules.market.overview.PoweredByAdapter
 import io.vextabit.wallet.ui.helpers.LinkHelper
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.findNavController
 import kotlinx.android.synthetic.main.fragment_recyclerview.*
 

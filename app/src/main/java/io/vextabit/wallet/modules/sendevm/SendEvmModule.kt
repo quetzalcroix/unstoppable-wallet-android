@@ -13,7 +13,7 @@ import io.vextabit.wallet.core.providers.Translator
 import io.vextabit.wallet.entities.Wallet
 import io.vextabit.wallet.modules.swap.settings.AddressResolutionService
 import io.vextabit.wallet.modules.swap.settings.RecipientAddressViewModel
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.ethereumkit.models.TransactionData
 import kotlinx.android.parcel.Parcelize
 import java.math.BigDecimal

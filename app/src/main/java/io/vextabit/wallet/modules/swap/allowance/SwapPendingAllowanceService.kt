@@ -3,7 +3,7 @@ package io.vextabit.wallet.modules.swap.allowance
 import io.vextabit.wallet.core.IAdapterManager
 import io.vextabit.wallet.core.adapters.Eip20Adapter
 import io.vextabit.wallet.entities.transactionrecords.evm.ApproveTransactionRecord
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers

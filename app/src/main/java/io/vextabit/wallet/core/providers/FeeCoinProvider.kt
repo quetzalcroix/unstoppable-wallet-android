@@ -1,8 +1,8 @@
 package io.vextabit.wallet.core.providers
 
-import io.horizontalsystems.coinkit.CoinKit
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.CoinKit
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 
 class FeeCoinProvider(private val coinKit: CoinKit) {
 

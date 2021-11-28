@@ -2,7 +2,7 @@ package io.vextabit.wallet.entities.transactionrecords.bitcoin
 
 import io.vextabit.wallet.entities.CoinValue
 import io.vextabit.wallet.modules.transactions.TransactionLockInfo
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import java.math.BigDecimal
 
 class BitcoinIncomingTransactionRecord(

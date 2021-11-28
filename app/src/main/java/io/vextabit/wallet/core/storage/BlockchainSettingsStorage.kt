@@ -2,7 +2,7 @@ package io.vextabit.wallet.core.storage
 
 import io.vextabit.wallet.core.IBlockchainSettingsStorage
 import io.vextabit.wallet.entities.*
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 
 class BlockchainSettingsStorage(private val appDatabase: AppDatabase) : IBlockchainSettingsStorage {
 

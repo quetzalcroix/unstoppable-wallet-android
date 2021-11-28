@@ -3,7 +3,7 @@ package io.vextabit.wallet.ui.helpers
 import android.content.Context
 import android.graphics.drawable.Drawable
 import androidx.core.content.ContextCompat
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.views.R
 import java.util.*
 

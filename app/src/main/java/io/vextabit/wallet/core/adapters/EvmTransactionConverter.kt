@@ -3,8 +3,8 @@ package io.vextabit.wallet.core.adapters
 import io.vextabit.wallet.core.ICoinManager
 import io.vextabit.wallet.entities.CoinValue
 import io.vextabit.wallet.entities.transactionrecords.evm.*
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.erc20kit.decorations.ApproveMethodDecoration
 import io.horizontalsystems.erc20kit.decorations.TransferEventDecoration
 import io.horizontalsystems.erc20kit.decorations.TransferMethodDecoration

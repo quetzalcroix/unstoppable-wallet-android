@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import io.vextabit.wallet.R
 import io.vextabit.wallet.core.App
-import io.horizontalsystems.xrateskit.entities.TimePeriod as XRatesKitTimePeriod
+import io.vextabit.xrateskit.entities.TimePeriod as XRatesKitTimePeriod
 
 object MarketAdvancedSearchModule {
     class Factory : ViewModelProvider.Factory {

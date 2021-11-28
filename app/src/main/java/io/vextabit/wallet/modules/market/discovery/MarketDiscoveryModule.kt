@@ -9,7 +9,7 @@ import io.vextabit.wallet.modules.market.list.MarketListViewModel
 object MarketDiscoveryModule {
 
     class Factory : ViewModelProvider.Factory {
-        val service by lazy { MarketDiscoveryService(io.vextabit.wallet.core.App.xRateManager, io.vextabit.wallet.core.App.backgroundManager) }
+        val service by lazy { MarketDiscoveryService(App.xRateManager, App.backgroundManager) }
 
         @Suppress("UNCHECKED_CAST")
         override fun <T : ViewModel?> create(modelClass: Class<T>) = when (modelClass) {
@@ -17,8 +17,8 @@ object MarketDiscoveryModule {
                 MarketDiscoveryViewModel(service, listOf(service)) as T
             }
             MarketListViewModel::class.java -> {
-                val listService = MarketListService(service, io.vextabit.wallet.core.App.currencyManager)
-                MarketListViewModel(listService, io.vextabit.wallet.core.App.connectivityManager, listOf(listService)) as T
+                val listService = MarketListService(service, App.currencyManager)
+                MarketListViewModel(listService, App.connectivityManager, listOf(listService)) as T
             }
             else -> throw IllegalArgumentException()
         }

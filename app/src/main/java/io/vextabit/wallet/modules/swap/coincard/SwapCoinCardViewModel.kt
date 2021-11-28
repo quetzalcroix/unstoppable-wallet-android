@@ -14,7 +14,7 @@ import io.vextabit.wallet.modules.send.SendModule.AmountInfo
 import io.vextabit.wallet.modules.swap.SwapMainModule
 import io.vextabit.wallet.modules.swap.SwapViewItemHelper
 import io.vextabit.wallet.ui.extensions.AmountInputView
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.SingleLiveEvent
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers

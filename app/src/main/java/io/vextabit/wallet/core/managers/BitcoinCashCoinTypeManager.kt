@@ -4,7 +4,7 @@ import io.vextabit.wallet.core.IAdapterManager
 import io.vextabit.wallet.core.IBlockchainSettingsStorage
 import io.vextabit.wallet.core.IWalletManager
 import io.vextabit.wallet.entities.BitcoinCashCoinType
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 
 class BitcoinCashCoinTypeManager(
         private val walletManager: IWalletManager,

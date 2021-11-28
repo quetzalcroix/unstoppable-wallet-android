@@ -10,8 +10,8 @@ import io.vextabit.wallet.entities.ConfiguredCoin
 import io.vextabit.wallet.entities.Wallet
 import io.vextabit.wallet.modules.transactions.TransactionSource.*
 import io.vextabit.wallet.modules.transactions.TransactionWallet
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.reactivex.BackpressureStrategy
 import io.reactivex.Flowable
 import io.reactivex.disposables.CompositeDisposable

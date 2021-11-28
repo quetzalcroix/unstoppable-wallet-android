@@ -1,7 +1,7 @@
 package io.vextabit.wallet.entities
 
 import io.vextabit.wallet.core.App
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import java.math.BigDecimal
 import java.math.BigInteger
 

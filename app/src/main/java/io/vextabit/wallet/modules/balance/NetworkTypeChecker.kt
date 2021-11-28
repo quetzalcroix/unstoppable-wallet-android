@@ -2,7 +2,7 @@ package io.vextabit.wallet.modules.balance
 
 import io.vextabit.wallet.core.managers.AccountSettingManager
 import io.vextabit.wallet.entities.Wallet
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 
 class NetworkTypeChecker(private val accountSettingManager: AccountSettingManager) {
 

@@ -9,7 +9,7 @@ import io.vextabit.wallet.core.subscribeIO
 import io.vextabit.wallet.core.toHexString
 import io.vextabit.wallet.entities.DataState
 import io.vextabit.wallet.modules.sendevm.SendEvmData
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.ethereumkit.core.EthereumKit
 import io.horizontalsystems.ethereumkit.decorations.ContractMethodDecoration
 import io.horizontalsystems.ethereumkit.models.Address

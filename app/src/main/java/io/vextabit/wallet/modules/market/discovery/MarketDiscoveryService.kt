@@ -7,7 +7,7 @@ import io.vextabit.wallet.modules.market.Score
 import io.vextabit.wallet.modules.market.list.IMarketListFetcher
 import io.horizontalsystems.core.BackgroundManager
 import io.horizontalsystems.core.entities.Currency
-import io.horizontalsystems.xrateskit.entities.TimePeriod
+import io.vextabit.xrateskit.entities.TimePeriod
 import io.reactivex.Observable
 import io.reactivex.Single
 import io.reactivex.subjects.PublishSubject

@@ -13,7 +13,7 @@ import io.vextabit.wallet.modules.enablecoins.EnableCoinsDialog
 import io.vextabit.wallet.modules.enablecoins.EnableCoinsViewModel
 import io.vextabit.wallet.ui.extensions.ZcashBirthdayHeightDialog
 import io.vextabit.wallet.ui.extensions.coinlist.CoinListBaseFragment
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.findNavController
 import io.horizontalsystems.core.helpers.HudHelper
 import io.horizontalsystems.snackbar.SnackbarDuration

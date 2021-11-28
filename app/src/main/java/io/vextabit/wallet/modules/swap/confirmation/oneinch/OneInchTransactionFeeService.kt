@@ -9,7 +9,7 @@ import io.vextabit.wallet.core.subscribeIO
 import io.vextabit.wallet.entities.Address
 import io.vextabit.wallet.entities.DataState
 import io.vextabit.wallet.modules.swap.oneinch.OneInchKitHelper
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.ethereumkit.models.TransactionData
 import io.reactivex.BackpressureStrategy
 import io.reactivex.Flowable

@@ -3,7 +3,7 @@ package io.vextabit.wallet.modules.coin.audits
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import io.vextabit.wallet.core.App
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.views.ListPosition
 import java.util.*
 

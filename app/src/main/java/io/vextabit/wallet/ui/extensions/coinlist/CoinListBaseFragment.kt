@@ -11,7 +11,7 @@ import io.vextabit.wallet.core.BaseWithSearchFragment
 import io.vextabit.wallet.modules.blockchainsettings.BlockchainSettingsModule
 import io.vextabit.wallet.ui.extensions.BottomSheetSelectorMultipleDialog
 import io.vextabit.wallet.ui.helpers.AppLayoutHelper
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.findNavController
 import kotlinx.android.synthetic.main.fragment_manage_wallets.*
 

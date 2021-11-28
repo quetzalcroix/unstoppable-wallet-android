@@ -2,7 +2,7 @@ package io.vextabit.wallet.modules.restore.restoreselectcoins
 
 import io.vextabit.wallet.core.Clearable
 import io.vextabit.wallet.entities.*
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.reactivex.subjects.PublishSubject
 
 class CoinSettingsService : Clearable {

@@ -16,7 +16,7 @@ import io.vextabit.wallet.modules.send.submodules.SendSubmoduleFragment
 import io.vextabit.wallet.ui.extensions.SelectorDialog
 import io.vextabit.wallet.ui.extensions.SelectorItem
 import io.vextabit.wallet.ui.helpers.TextHelper
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.seekbar.FeeSeekBar
 import kotlinx.android.synthetic.main.view_send_fee.*
 

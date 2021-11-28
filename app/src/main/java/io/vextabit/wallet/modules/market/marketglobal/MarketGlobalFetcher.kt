@@ -3,7 +3,7 @@ package io.vextabit.wallet.modules.market.marketglobal
 import io.vextabit.wallet.core.IRateManager
 import io.vextabit.wallet.modules.metricchart.MetricChartModule
 import io.vextabit.wallet.modules.metricchart.MetricsType
-import io.horizontalsystems.xrateskit.entities.TimePeriod
+import io.vextabit.xrateskit.entities.TimePeriod
 import io.reactivex.Single
 
 class MarketGlobalFetcher(

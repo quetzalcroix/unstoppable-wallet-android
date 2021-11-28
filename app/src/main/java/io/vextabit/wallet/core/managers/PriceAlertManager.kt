@@ -11,7 +11,7 @@ import io.vextabit.wallet.core.storage.AppDatabase
 import io.vextabit.wallet.entities.AccountType
 import io.vextabit.wallet.entities.PriceAlert
 import io.vextabit.wallet.entities.SubscriptionJob
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.BackgroundManager
 import io.reactivex.BackpressureStrategy
 import io.reactivex.Flowable

@@ -3,8 +3,8 @@ package io.vextabit.wallet.core.managers
 import io.vextabit.wallet.core.IAccountManager
 import io.vextabit.wallet.core.IWalletManager
 import io.vextabit.wallet.entities.Wallet
-import io.horizontalsystems.coinkit.CoinKit
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.CoinKit
+import io.vextabit.coinkit.models.CoinType
 
 class ActivateCoinManager(
         private val coinKit: CoinKit,

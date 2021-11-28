@@ -13,7 +13,7 @@ import io.vextabit.wallet.modules.managewallets.ManageWalletsViewModel
 import io.vextabit.wallet.modules.restore.restoreselectcoins.RestoreSettingsViewModel
 import io.vextabit.wallet.ui.extensions.ZcashBirthdayHeightDialog
 import io.vextabit.wallet.ui.extensions.coinlist.CoinListBaseFragment
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.findNavController
 import kotlinx.android.synthetic.main.fragment_manage_wallets.*
 

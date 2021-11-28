@@ -14,7 +14,7 @@ import io.vextabit.wallet.modules.send.SendModule
 import io.vextabit.wallet.modules.send.submodules.SendSubmoduleFragment
 import io.vextabit.wallet.modules.swap.settings.RecipientAddressViewModel
 import io.vextabit.wallet.ui.extensions.AddressInputView
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 
 class SendAddressFragment(
         private val coin: Coin,

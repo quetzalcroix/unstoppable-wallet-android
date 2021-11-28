@@ -2,7 +2,7 @@ package io.vextabit.wallet.modules.market.search
 
 import io.vextabit.wallet.core.Clearable
 import io.vextabit.wallet.core.IRateManager
-import io.horizontalsystems.xrateskit.entities.CoinData
+import io.vextabit.xrateskit.entities.CoinData
 import io.reactivex.subjects.BehaviorSubject
 import java.util.*
 

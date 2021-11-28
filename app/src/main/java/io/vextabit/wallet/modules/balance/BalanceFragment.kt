@@ -35,7 +35,7 @@ import io.vextabit.wallet.ui.extensions.NpaLinearLayoutManager
 import io.vextabit.wallet.ui.extensions.SelectorDialog
 import io.vextabit.wallet.ui.extensions.SelectorItem
 import io.vextabit.wallet.ui.helpers.TextHelper
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.findNavController
 import io.horizontalsystems.core.helpers.HudHelper
 import io.horizontalsystems.views.helpers.LayoutHelper

@@ -7,7 +7,7 @@ import io.vextabit.wallet.core.providers.Translator
 import io.vextabit.wallet.entities.Address
 import io.vextabit.wallet.modules.sendevm.SendEvmData.AdditionalInfo
 import io.vextabit.wallet.modules.swap.settings.IRecipientAddressService
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.ethereumkit.core.AddressValidator
 import io.reactivex.BackpressureStrategy
 import io.reactivex.Flowable

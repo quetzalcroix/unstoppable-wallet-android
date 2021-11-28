@@ -6,7 +6,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.app.NotificationManagerCompat
 import androidx.preference.PreferenceManager
-import io.horizontalsystems.coinkit.CoinKit
+import io.vextabit.coinkit.CoinKit
 import io.horizontalsystems.core.BackgroundManager
 import io.horizontalsystems.core.CoreApp
 import io.horizontalsystems.core.ICoreApp
@@ -54,40 +54,40 @@ class App : CoreApp() {
         lateinit var backgroundStateChangeListener: BackgroundStateChangeListener
         lateinit var appConfigProvider: IAppConfigProvider
         lateinit var adapterManager: IAdapterManager
-        lateinit var walletManager: io.vextabit.wallet.core.IWalletManager
-        lateinit var walletStorage: io.vextabit.wallet.core.IWalletStorage
-        lateinit var accountManager: io.vextabit.wallet.core.IAccountManager
-        lateinit var accountFactory: io.vextabit.wallet.core.IAccountFactory
-        lateinit var backupManager: io.vextabit.wallet.core.IBackupManager
+        lateinit var walletManager: IWalletManager
+        lateinit var walletStorage: IWalletStorage
+        lateinit var accountManager: IAccountManager
+        lateinit var accountFactory: IAccountFactory
+        lateinit var backupManager: IBackupManager
 
-        lateinit var xRateManager: io.vextabit.wallet.core.IRateManager
+        lateinit var xRateManager: IRateManager
         lateinit var connectivityManager: ConnectivityManager
         lateinit var appDatabase: AppDatabase
-        lateinit var accountsStorage: io.vextabit.wallet.core.IAccountsStorage
-        lateinit var priceAlertManager: io.vextabit.wallet.core.IPriceAlertManager
-        lateinit var enabledWalletsStorage: io.vextabit.wallet.core.IEnabledWalletStorage
-        lateinit var blockchainSettingsStorage: io.vextabit.wallet.core.IBlockchainSettingsStorage
+        lateinit var accountsStorage: IAccountsStorage
+        lateinit var priceAlertManager: IPriceAlertManager
+        lateinit var enabledWalletsStorage: IEnabledWalletStorage
+        lateinit var blockchainSettingsStorage: IBlockchainSettingsStorage
         lateinit var ethereumKitManager: EvmKitManager
         lateinit var binanceSmartChainKitManager: EvmKitManager
         lateinit var binanceKitManager: BinanceKitManager
-        lateinit var numberFormatter: io.vextabit.wallet.core.IAppNumberFormatter
+        lateinit var numberFormatter: IAppNumberFormatter
         lateinit var addressParserFactory: AddressParserFactory
         lateinit var feeCoinProvider: FeeCoinProvider
         lateinit var notificationNetworkWrapper: NotificationNetworkWrapper
-        lateinit var notificationManager: io.vextabit.wallet.core.INotificationManager
-        lateinit var ethereumRpcModeSettingsManager: io.vextabit.wallet.core.IEthereumRpcModeSettingsManager
-        lateinit var initialSyncModeSettingsManager: io.vextabit.wallet.core.IInitialSyncModeSettingsManager
-        lateinit var derivationSettingsManager: io.vextabit.wallet.core.IDerivationSettingsManager
+        lateinit var notificationManager: INotificationManager
+        lateinit var ethereumRpcModeSettingsManager: IEthereumRpcModeSettingsManager
+        lateinit var initialSyncModeSettingsManager: IInitialSyncModeSettingsManager
+        lateinit var derivationSettingsManager: IDerivationSettingsManager
         lateinit var bitcoinCashCoinTypeManager: BitcoinCashCoinTypeManager
-        lateinit var accountCleaner: io.vextabit.wallet.core.IAccountCleaner
-        lateinit var rateAppManager: io.vextabit.wallet.core.IRateAppManager
-        lateinit var coinManager: io.vextabit.wallet.core.ICoinManager
+        lateinit var accountCleaner: IAccountCleaner
+        lateinit var rateAppManager: IRateAppManager
+        lateinit var coinManager: ICoinManager
         lateinit var walletConnectSessionStorage: WalletConnectSessionStorage
         lateinit var walletConnectSessionManager: WalletConnectSessionManager
         lateinit var walletConnectRequestManager: WalletConnectRequestManager
         lateinit var walletConnectManager: WalletConnectManager
-        lateinit var notificationSubscriptionManager: io.vextabit.wallet.core.INotificationSubscriptionManager
-        lateinit var termsManager: io.vextabit.wallet.core.ITermsManager
+        lateinit var notificationSubscriptionManager: INotificationSubscriptionManager
+        lateinit var termsManager: ITermsManager
         lateinit var marketFavoritesManager: MarketFavoritesManager
         lateinit var coinKit: CoinKit
         lateinit var activateCoinManager: ActivateCoinManager
@@ -115,54 +115,54 @@ class App : CoreApp() {
         preferences = PreferenceManager.getDefaultSharedPreferences(applicationContext)
 
         val appConfig = AppConfigProvider()
-        io.vextabit.wallet.core.App.Companion.appConfigProvider = appConfig
+        appConfigProvider = appConfig
         buildConfigProvider = appConfig
         languageConfigProvider = appConfig
 
-        io.vextabit.wallet.core.App.Companion.coinKit = CoinKit.create(this, buildConfigProvider.testMode)
+        coinKit = CoinKit.create(this, buildConfigProvider.testMode)
 
-        io.vextabit.wallet.core.App.Companion.feeRateProvider = FeeRateProvider(io.vextabit.wallet.core.App.Companion.appConfigProvider)
+        feeRateProvider = FeeRateProvider(appConfigProvider)
         backgroundManager = BackgroundManager(this)
 
-        io.vextabit.wallet.core.App.Companion.appDatabase = AppDatabase.getInstance(this)
+        appDatabase = AppDatabase.getInstance(this)
 
-        io.vextabit.wallet.core.App.Companion.evmNetworkManager = EvmNetworkManager(io.vextabit.wallet.core.App.Companion.appConfigProvider)
-        io.vextabit.wallet.core.App.Companion.accountSettingManager = AccountSettingManager(AccountSettingRecordStorage(io.vextabit.wallet.core.App.Companion.appDatabase), io.vextabit.wallet.core.App.Companion.evmNetworkManager)
+        evmNetworkManager = EvmNetworkManager(appConfigProvider)
+        accountSettingManager = AccountSettingManager(AccountSettingRecordStorage(appDatabase), evmNetworkManager)
 
-        io.vextabit.wallet.core.App.Companion.ethereumKitManager = EvmKitManager(appConfig.etherscanApiKey, backgroundManager, EvmNetworkProviderEth(io.vextabit.wallet.core.App.Companion.accountSettingManager))
-        io.vextabit.wallet.core.App.Companion.binanceSmartChainKitManager = EvmKitManager(appConfig.bscscanApiKey, backgroundManager, EvmNetworkProviderBsc(io.vextabit.wallet.core.App.Companion.accountSettingManager))
-        io.vextabit.wallet.core.App.Companion.binanceKitManager = BinanceKitManager(buildConfigProvider.testMode)
+        ethereumKitManager = EvmKitManager(appConfig.etherscanApiKey, backgroundManager, EvmNetworkProviderEth(accountSettingManager))
+        binanceSmartChainKitManager = EvmKitManager(appConfig.bscscanApiKey, backgroundManager, EvmNetworkProviderBsc(accountSettingManager))
+        binanceKitManager = BinanceKitManager(buildConfigProvider.testMode)
 
-        io.vextabit.wallet.core.App.Companion.accountsStorage = AccountsStorage(io.vextabit.wallet.core.App.Companion.appDatabase)
-        io.vextabit.wallet.core.App.Companion.restoreSettingsStorage = RestoreSettingsStorage(io.vextabit.wallet.core.App.Companion.appDatabase)
+        accountsStorage = AccountsStorage(appDatabase)
+        restoreSettingsStorage = RestoreSettingsStorage(appDatabase)
 
-        io.vextabit.wallet.core.AppLog.logsDao = io.vextabit.wallet.core.App.Companion.appDatabase.logsDao()
+        AppLog.logsDao = appDatabase.logsDao()
 
-        io.vextabit.wallet.core.App.Companion.coinManager = CoinManager(io.vextabit.wallet.core.App.Companion.coinKit, io.vextabit.wallet.core.App.Companion.appConfigProvider)
+        coinManager = CoinManager(coinKit, appConfigProvider)
 
-        io.vextabit.wallet.core.App.Companion.enabledWalletsStorage = EnabledWalletsStorage(io.vextabit.wallet.core.App.Companion.appDatabase)
-        io.vextabit.wallet.core.App.Companion.blockchainSettingsStorage = BlockchainSettingsStorage(io.vextabit.wallet.core.App.Companion.appDatabase)
-        io.vextabit.wallet.core.App.Companion.walletStorage = WalletStorage(io.vextabit.wallet.core.App.Companion.coinManager, io.vextabit.wallet.core.App.Companion.enabledWalletsStorage)
+        enabledWalletsStorage = EnabledWalletsStorage(appDatabase)
+        blockchainSettingsStorage = BlockchainSettingsStorage(appDatabase)
+        walletStorage = WalletStorage(coinManager, enabledWalletsStorage)
 
         LocalStorageManager(preferences).apply {
             localStorage = this
-            io.vextabit.wallet.core.App.Companion.chartTypeStorage = this
+            chartTypeStorage = this
             pinStorage = this
             thirdKeyboardStorage = this
-            io.vextabit.wallet.core.App.Companion.marketStorage = this
+            marketStorage = this
         }
 
-        io.vextabit.wallet.core.App.Companion.torKitManager = TorManager(instance, localStorage)
+        torKitManager = TorManager(instance, localStorage)
 
         wordsManager = WordsManager()
         networkManager = NetworkManager()
         accountCleaner = AccountCleaner(buildConfigProvider.testMode)
-        accountManager = AccountManager(io.vextabit.wallet.core.App.Companion.accountsStorage, accountCleaner)
-        io.vextabit.wallet.core.App.Companion.accountFactory = AccountFactory(accountManager)
-        io.vextabit.wallet.core.App.Companion.backupManager = BackupManager(accountManager)
-        io.vextabit.wallet.core.App.Companion.walletManager = WalletManager(accountManager, io.vextabit.wallet.core.App.Companion.walletStorage)
+        accountManager = AccountManager(accountsStorage, accountCleaner)
+        accountFactory = AccountFactory(accountManager)
+        backupManager = BackupManager(accountManager)
+        walletManager = WalletManager(accountManager, walletStorage)
 
-        KeyStoreManager("MASTER_KEY", KeyStoreCleaner(localStorage, accountManager, io.vextabit.wallet.core.App.Companion.walletManager)).apply {
+        KeyStoreManager("MASTER_KEY", KeyStoreCleaner(localStorage, accountManager, walletManager)).apply {
             keyStoreManager = this
             keyProvider = this
         }
@@ -172,36 +172,36 @@ class App : CoreApp() {
         systemInfoManager = SystemInfoManager()
 
         languageManager = LanguageManager()
-        currencyManager = CurrencyManager(localStorage, io.vextabit.wallet.core.App.Companion.appConfigProvider)
-        io.vextabit.wallet.core.App.Companion.numberFormatter = NumberFormatter(languageManager)
+        currencyManager = CurrencyManager(localStorage, appConfigProvider)
+        numberFormatter = NumberFormatter(languageManager)
 
-        io.vextabit.wallet.core.App.Companion.connectivityManager = ConnectivityManager(backgroundManager)
+        connectivityManager = ConnectivityManager(backgroundManager)
 
         val zcashBirthdayProvider = ZcashBirthdayProvider(this, buildConfigProvider.testMode)
-        io.vextabit.wallet.core.App.Companion.restoreSettingsManager = RestoreSettingsManager(io.vextabit.wallet.core.App.Companion.restoreSettingsStorage, zcashBirthdayProvider)
+        restoreSettingsManager = RestoreSettingsManager(restoreSettingsStorage, zcashBirthdayProvider)
 
-        val adapterFactory = AdapterFactory(instance, buildConfigProvider.testMode, io.vextabit.wallet.core.App.Companion.ethereumKitManager, io.vextabit.wallet.core.App.Companion.binanceSmartChainKitManager, io.vextabit.wallet.core.App.Companion.binanceKitManager, backgroundManager, io.vextabit.wallet.core.App.Companion.restoreSettingsManager, io.vextabit.wallet.core.App.Companion.coinManager)
-        io.vextabit.wallet.core.App.Companion.adapterManager = AdapterManager(io.vextabit.wallet.core.App.Companion.walletManager, adapterFactory, io.vextabit.wallet.core.App.Companion.ethereumKitManager, io.vextabit.wallet.core.App.Companion.binanceSmartChainKitManager, io.vextabit.wallet.core.App.Companion.binanceKitManager)
+        val adapterFactory = AdapterFactory(instance, buildConfigProvider.testMode, ethereumKitManager, binanceSmartChainKitManager, binanceKitManager, backgroundManager, restoreSettingsManager, coinManager)
+        adapterManager = AdapterManager(walletManager, adapterFactory, ethereumKitManager, binanceSmartChainKitManager, binanceKitManager)
 
-        io.vextabit.wallet.core.App.Companion.initialSyncModeSettingsManager = InitialSyncSettingsManager(io.vextabit.wallet.core.App.Companion.coinManager, io.vextabit.wallet.core.App.Companion.blockchainSettingsStorage, io.vextabit.wallet.core.App.Companion.adapterManager, io.vextabit.wallet.core.App.Companion.walletManager)
-        io.vextabit.wallet.core.App.Companion.derivationSettingsManager = DerivationSettingsManager(io.vextabit.wallet.core.App.Companion.blockchainSettingsStorage, io.vextabit.wallet.core.App.Companion.adapterManager, io.vextabit.wallet.core.App.Companion.walletManager)
-        io.vextabit.wallet.core.App.Companion.ethereumRpcModeSettingsManager = EthereumRpcModeSettingsManager(io.vextabit.wallet.core.App.Companion.blockchainSettingsStorage, io.vextabit.wallet.core.App.Companion.adapterManager, io.vextabit.wallet.core.App.Companion.walletManager)
-        io.vextabit.wallet.core.App.Companion.bitcoinCashCoinTypeManager = BitcoinCashCoinTypeManager(io.vextabit.wallet.core.App.Companion.walletManager, io.vextabit.wallet.core.App.Companion.adapterManager, io.vextabit.wallet.core.App.Companion.blockchainSettingsStorage)
+        initialSyncModeSettingsManager = InitialSyncSettingsManager(coinManager, blockchainSettingsStorage, adapterManager, walletManager)
+        derivationSettingsManager = DerivationSettingsManager(blockchainSettingsStorage, adapterManager, walletManager)
+        ethereumRpcModeSettingsManager = EthereumRpcModeSettingsManager(blockchainSettingsStorage, adapterManager, walletManager)
+        bitcoinCashCoinTypeManager = BitcoinCashCoinTypeManager(walletManager, adapterManager, blockchainSettingsStorage)
 
-        adapterFactory.initialSyncModeSettingsManager = io.vextabit.wallet.core.App.Companion.initialSyncModeSettingsManager
-        adapterFactory.ethereumRpcModeSettingsManager = io.vextabit.wallet.core.App.Companion.ethereumRpcModeSettingsManager
+        adapterFactory.initialSyncModeSettingsManager = initialSyncModeSettingsManager
+        adapterFactory.ethereumRpcModeSettingsManager = ethereumRpcModeSettingsManager
 
-        io.vextabit.wallet.core.App.Companion.feeCoinProvider = FeeCoinProvider(io.vextabit.wallet.core.App.Companion.coinKit)
-        io.vextabit.wallet.core.App.Companion.xRateManager = RateManager(this, io.vextabit.wallet.core.App.Companion.appConfigProvider)
+        feeCoinProvider = FeeCoinProvider(coinKit)
+        xRateManager = RateManager(this, appConfigProvider)
 
-        io.vextabit.wallet.core.App.Companion.addressParserFactory = AddressParserFactory()
+        addressParserFactory = AddressParserFactory()
 
-        io.vextabit.wallet.core.App.Companion.notificationNetworkWrapper = NotificationNetworkWrapper(localStorage, networkManager, io.vextabit.wallet.core.App.Companion.appConfigProvider)
-        io.vextabit.wallet.core.App.Companion.notificationManager = NotificationManager(NotificationManagerCompat.from(this), localStorage).apply {
+        notificationNetworkWrapper = NotificationNetworkWrapper(localStorage, networkManager, appConfigProvider)
+        notificationManager = NotificationManager(NotificationManagerCompat.from(this), localStorage).apply {
             backgroundManager.registerListener(this)
         }
-        io.vextabit.wallet.core.App.Companion.notificationSubscriptionManager = NotificationSubscriptionManager(io.vextabit.wallet.core.App.Companion.appDatabase, io.vextabit.wallet.core.App.Companion.notificationNetworkWrapper)
-        io.vextabit.wallet.core.App.Companion.priceAlertManager = PriceAlertManager(io.vextabit.wallet.core.App.Companion.appDatabase, io.vextabit.wallet.core.App.Companion.notificationSubscriptionManager, io.vextabit.wallet.core.App.Companion.notificationManager, localStorage, io.vextabit.wallet.core.App.Companion.notificationNetworkWrapper, backgroundManager)
+        notificationSubscriptionManager = NotificationSubscriptionManager(appDatabase, notificationNetworkWrapper)
+        priceAlertManager = PriceAlertManager(appDatabase, notificationSubscriptionManager, notificationManager, localStorage, notificationNetworkWrapper, backgroundManager)
 
         pinComponent = PinComponent(
                 pinStorage = pinStorage,
@@ -214,27 +214,27 @@ class App : CoreApp() {
                 )
         )
 
-        io.vextabit.wallet.core.App.Companion.backgroundStateChangeListener = BackgroundStateChangeListener(systemInfoManager, keyStoreManager, pinComponent).apply {
+        backgroundStateChangeListener = BackgroundStateChangeListener(systemInfoManager, keyStoreManager, pinComponent).apply {
             backgroundManager.registerListener(this)
         }
 
-        io.vextabit.wallet.core.App.Companion.rateAppManager = RateAppManager(io.vextabit.wallet.core.App.Companion.walletManager, io.vextabit.wallet.core.App.Companion.adapterManager, localStorage)
-        io.vextabit.wallet.core.App.Companion.walletConnectSessionStorage = WalletConnectSessionStorage(io.vextabit.wallet.core.App.Companion.appDatabase)
-        io.vextabit.wallet.core.App.Companion.walletConnectSessionManager = WalletConnectSessionManager(io.vextabit.wallet.core.App.Companion.walletConnectSessionStorage, accountManager, io.vextabit.wallet.core.App.Companion.accountSettingManager)
-        io.vextabit.wallet.core.App.Companion.walletConnectRequestManager = WalletConnectRequestManager()
-        io.vextabit.wallet.core.App.Companion.walletConnectManager = WalletConnectManager(accountManager, io.vextabit.wallet.core.App.Companion.ethereumKitManager, io.vextabit.wallet.core.App.Companion.binanceSmartChainKitManager)
+        rateAppManager = RateAppManager(walletManager, adapterManager, localStorage)
+        walletConnectSessionStorage = WalletConnectSessionStorage(appDatabase)
+        walletConnectSessionManager = WalletConnectSessionManager(walletConnectSessionStorage, accountManager, accountSettingManager)
+        walletConnectRequestManager = WalletConnectRequestManager()
+        walletConnectManager = WalletConnectManager(accountManager, ethereumKitManager, binanceSmartChainKitManager)
 
-        io.vextabit.wallet.core.App.Companion.termsManager = TermsManager(localStorage)
+        termsManager = TermsManager(localStorage)
 
-        io.vextabit.wallet.core.App.Companion.marketFavoritesManager = MarketFavoritesManager(io.vextabit.wallet.core.App.Companion.appDatabase)
+        marketFavoritesManager = MarketFavoritesManager(appDatabase)
 
-        io.vextabit.wallet.core.App.Companion.activateCoinManager = ActivateCoinManager(io.vextabit.wallet.core.App.Companion.coinKit, io.vextabit.wallet.core.App.Companion.walletManager, accountManager)
+        activateCoinManager = ActivateCoinManager(coinKit, walletManager, accountManager)
 
-        io.vextabit.wallet.core.App.Companion.releaseNotesManager = ReleaseNotesManager(systemInfoManager, localStorage, io.vextabit.wallet.core.App.Companion.appConfigProvider)
+        releaseNotesManager = ReleaseNotesManager(systemInfoManager, localStorage, appConfigProvider)
 
         setAppTheme()
 
-        registerActivityLifecycleCallbacks(ActivityLifecycleCallbacks(io.vextabit.wallet.core.App.Companion.torKitManager))
+        registerActivityLifecycleCallbacks(ActivityLifecycleCallbacks(torKitManager))
 
         startTasks()
 
@@ -267,7 +267,7 @@ class App : CoreApp() {
                    the first to be terminated.
                 */
                 if (backgroundManager.inBackground) {
-                    val logger = io.vextabit.wallet.core.AppLogger("low memory")
+                    val logger = AppLogger("low memory")
                     logger.info("Kill app due to low memory, level: $level")
                     exitProcess(0)
                 }
@@ -293,12 +293,12 @@ class App : CoreApp() {
 
     private fun startTasks() {
         Thread(Runnable {
-            io.vextabit.wallet.core.App.Companion.rateAppManager.onAppLaunch()
+            rateAppManager.onAppLaunch()
             accountManager.loadAccounts()
-            io.vextabit.wallet.core.App.Companion.walletManager.loadWallets()
-            io.vextabit.wallet.core.App.Companion.adapterManager.preloadAdapters()
+            walletManager.loadWallets()
+            adapterManager.preloadAdapters()
             accountManager.clearAccounts()
-            io.vextabit.wallet.core.App.Companion.notificationSubscriptionManager.processJobs()
+            notificationSubscriptionManager.processJobs()
 
             AppVersionManager(systemInfoManager, localStorage).apply { storeAppVersion() }
 

@@ -20,7 +20,7 @@ import io.vextabit.wallet.R
 import io.vextabit.wallet.modules.coin.AboutText
 import io.horizontalsystems.views.helpers.LayoutHelper
 import io.horizontalsystems.views.inflate
-import io.horizontalsystems.xrateskit.entities.CoinMeta
+import io.vextabit.xrateskit.entities.CoinMeta
 import io.noties.markwon.AbstractMarkwonPlugin
 import io.noties.markwon.Markwon
 import io.noties.markwon.MarkwonSpansFactory

@@ -14,11 +14,11 @@ import io.horizontalsystems.chartview.ChartDataFactory
 import io.horizontalsystems.chartview.ChartView
 import io.horizontalsystems.chartview.models.ChartPoint
 import io.horizontalsystems.chartview.models.MacdInfo
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.entities.Currency
 import io.horizontalsystems.core.helpers.DateHelper
 import io.horizontalsystems.views.ListPosition
-import io.horizontalsystems.xrateskit.entities.*
+import io.vextabit.xrateskit.entities.*
 import kotlinx.android.parcel.Parcelize
 import java.lang.Long.max
 import java.math.BigDecimal

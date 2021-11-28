@@ -7,7 +7,7 @@ import io.vextabit.wallet.core.managers.RestoreSettingType
 import io.vextabit.wallet.core.managers.RestoreSettingsManager
 import io.vextabit.wallet.core.subscribeIO
 import io.vextabit.wallet.entities.Account
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.reactivex.BackpressureStrategy
 import io.reactivex.Flowable
 import io.reactivex.disposables.CompositeDisposable

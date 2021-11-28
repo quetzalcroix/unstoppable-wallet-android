@@ -4,7 +4,7 @@ import io.vextabit.wallet.core.adapters.BaseEvmAdapter
 import io.vextabit.wallet.core.adapters.EvmAdapter
 import io.vextabit.wallet.entities.CoinValue
 import io.vextabit.wallet.entities.transactionrecords.TransactionRecord
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.toHexString
 import io.horizontalsystems.ethereumkit.models.FullTransaction
 

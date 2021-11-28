@@ -2,7 +2,7 @@ package io.vextabit.wallet.modules.send.submodules.amount
 
 import io.vextabit.wallet.core.IAppNumberFormatter
 import io.vextabit.wallet.modules.send.SendModule
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.entities.Currency
 import java.math.BigDecimal
 import java.math.RoundingMode

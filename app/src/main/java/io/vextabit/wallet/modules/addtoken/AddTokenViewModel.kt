@@ -8,7 +8,7 @@ import io.vextabit.wallet.core.providers.Translator
 import io.vextabit.wallet.entities.ApiError
 import io.vextabit.wallet.entities.blockchainType
 import io.vextabit.wallet.modules.swap.settings.Caution
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.SingleLiveEvent
 import io.horizontalsystems.ethereumkit.core.AddressValidator
 import io.reactivex.disposables.CompositeDisposable

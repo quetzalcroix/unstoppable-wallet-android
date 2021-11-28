@@ -1,7 +1,7 @@
 package io.vextabit.wallet.modules.market
 
 import io.vextabit.wallet.entities.CurrencyValue
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.entities.Currency
 import junit.framework.TestCase
 import org.junit.Assert

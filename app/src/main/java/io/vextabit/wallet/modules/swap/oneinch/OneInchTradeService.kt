@@ -5,7 +5,7 @@ import io.vextabit.wallet.modules.swap.SwapMainModule
 import io.vextabit.wallet.modules.swap.SwapMainModule.AmountType
 import io.vextabit.wallet.modules.swap.confirmation.oneinch.OneInchSwapParameters
 import io.vextabit.wallet.modules.swap.settings.oneinch.OneInchSwapSettingsModule.OneInchSwapSettings
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.ethereumkit.core.EthereumKit
 import io.horizontalsystems.oneinchkit.Quote
 import io.reactivex.Observable

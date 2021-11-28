@@ -8,11 +8,11 @@ import io.vextabit.wallet.core.providers.Translator
 import io.vextabit.wallet.entities.Wallet
 import io.vextabit.wallet.entities.blockchainType
 import io.vextabit.wallet.entities.swappable
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.entities.Currency
 import io.horizontalsystems.core.helpers.DateHelper
-import io.horizontalsystems.xrateskit.entities.LatestRate
+import io.vextabit.xrateskit.entities.LatestRate
 import java.math.BigDecimal
 import java.util.*
 

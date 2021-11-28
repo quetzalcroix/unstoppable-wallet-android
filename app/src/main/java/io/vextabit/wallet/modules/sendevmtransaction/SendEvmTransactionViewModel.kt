@@ -12,8 +12,8 @@ import io.vextabit.wallet.core.subscribeIO
 import io.vextabit.wallet.entities.DataState
 import io.vextabit.wallet.modules.sendevm.SendEvmData
 import io.vextabit.wallet.modules.transactionInfo.TransactionInfoAddressMapper
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.toHexString
 import io.horizontalsystems.erc20kit.decorations.ApproveMethodDecoration
 import io.horizontalsystems.erc20kit.decorations.TransferMethodDecoration

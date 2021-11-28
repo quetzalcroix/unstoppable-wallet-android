@@ -10,7 +10,7 @@ import io.vextabit.wallet.core.providers.Translator
 import io.vextabit.wallet.core.subscribeIO
 import io.vextabit.wallet.modules.market.sortedByDescendingNullLast
 import io.vextabit.wallet.modules.market.sortedByNullLast
-import io.horizontalsystems.xrateskit.entities.DefiTvl
+import io.vextabit.xrateskit.entities.DefiTvl
 import io.reactivex.disposables.Disposable
 
 class TvlRankViewModel(

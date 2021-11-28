@@ -2,7 +2,7 @@ package io.vextabit.wallet.modules.transactions
 
 import io.vextabit.wallet.entities.CurrencyValue
 import io.vextabit.wallet.entities.LastBlockInfo
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.entities.Currency
 import java.math.BigDecimal
 

@@ -7,9 +7,9 @@ import io.vextabit.wallet.core.subscribeIO
 import io.vextabit.wallet.entities.CoinValue
 import io.vextabit.wallet.entities.CurrencyValue
 import io.vextabit.wallet.modules.send.SendModule
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.ICurrencyManager
-import io.horizontalsystems.xrateskit.entities.LatestRate
+import io.vextabit.xrateskit.entities.LatestRate
 import io.reactivex.BackpressureStrategy
 import io.reactivex.Flowable
 import io.reactivex.disposables.CompositeDisposable

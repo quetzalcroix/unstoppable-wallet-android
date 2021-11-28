@@ -5,7 +5,7 @@ import io.vextabit.wallet.core.IAdapterManager
 import io.vextabit.wallet.core.adapters.Eip20Adapter
 import io.vextabit.wallet.entities.CoinValue
 import io.vextabit.wallet.modules.swap.SwapMainModule
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.ethereumkit.core.EthereumKit
 import io.horizontalsystems.ethereumkit.models.Address
 import io.horizontalsystems.ethereumkit.models.DefaultBlockParameter

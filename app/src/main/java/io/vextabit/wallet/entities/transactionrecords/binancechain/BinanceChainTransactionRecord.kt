@@ -4,7 +4,7 @@ import io.vextabit.wallet.core.adapters.BinanceAdapter
 import io.vextabit.wallet.entities.CoinValue
 import io.vextabit.wallet.entities.transactionrecords.TransactionRecord
 import io.horizontalsystems.binancechainkit.models.TransactionInfo
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 
 abstract class BinanceChainTransactionRecord(
     transaction: TransactionInfo,

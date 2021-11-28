@@ -9,7 +9,7 @@ import io.vextabit.wallet.entities.transactionrecords.binancechain.BinanceChainO
 import io.horizontalsystems.binancechainkit.BinanceChainKit
 import io.horizontalsystems.binancechainkit.core.api.BinanceError
 import io.horizontalsystems.binancechainkit.models.TransactionInfo
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.reactivex.Flowable
 import io.reactivex.Single
 import java.math.BigDecimal

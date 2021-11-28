@@ -2,8 +2,8 @@ package io.vextabit.wallet.core.adapters
 
 import io.vextabit.wallet.core.*
 import io.vextabit.wallet.entities.transactionrecords.TransactionRecord
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.ethereumkit.core.EthereumKit
 import io.horizontalsystems.ethereumkit.core.hexStringToByteArray
 import io.horizontalsystems.ethereumkit.models.Address

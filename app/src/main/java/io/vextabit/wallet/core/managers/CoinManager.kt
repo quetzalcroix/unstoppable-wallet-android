@@ -2,9 +2,9 @@ package io.vextabit.wallet.core.managers
 
 import io.vextabit.wallet.core.IAppConfigProvider
 import io.vextabit.wallet.core.ICoinManager
-import io.horizontalsystems.coinkit.CoinKit
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.CoinKit
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.reactivex.BackpressureStrategy
 import io.reactivex.Flowable
 import io.reactivex.subjects.PublishSubject

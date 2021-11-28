@@ -5,7 +5,7 @@ import io.vextabit.wallet.core.adapters.BitcoinBaseAdapter
 import io.vextabit.wallet.core.managers.EvmKitManager
 import io.vextabit.wallet.entities.Account
 import io.vextabit.wallet.entities.AccountType
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.ISystemInfoManager
 import java.util.*
 import kotlin.collections.LinkedHashMap

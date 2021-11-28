@@ -4,7 +4,7 @@ import android.os.Parcelable
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import io.vextabit.wallet.core.App
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import kotlinx.android.parcel.Parcelize
 
 object AddTokenModule {
@@ -13,16 +13,16 @@ object AddTokenModule {
         @Suppress("UNCHECKED_CAST")
         override fun <T : ViewModel> create(modelClass: Class<T>): T {
 
-            val activeAccount = io.vextabit.wallet.core.App.accountManager.activeAccount!!
-            val erc20NetworkType = io.vextabit.wallet.core.App.accountSettingManager.ethereumNetwork(activeAccount).networkType
-            val bep20NetworkType = io.vextabit.wallet.core.App.accountSettingManager.binanceSmartChainNetwork(activeAccount).networkType
+            val activeAccount = App.accountManager.activeAccount!!
+            val erc20NetworkType = App.accountSettingManager.ethereumNetwork(activeAccount).networkType
+            val bep20NetworkType = App.accountSettingManager.binanceSmartChainNetwork(activeAccount).networkType
 
-            val ethereumService = AddEvmTokenBlockchainService(io.vextabit.wallet.core.App.appConfigProvider, io.vextabit.wallet.core.App.networkManager, erc20NetworkType)
-            val binanceSmartChainService = AddEvmTokenBlockchainService(io.vextabit.wallet.core.App.appConfigProvider, io.vextabit.wallet.core.App.networkManager, bep20NetworkType)
-            val binanceService = AddBep2TokenBlockchainService(io.vextabit.wallet.core.App.buildConfigProvider)
+            val ethereumService = AddEvmTokenBlockchainService(App.appConfigProvider, App.networkManager, erc20NetworkType)
+            val binanceSmartChainService = AddEvmTokenBlockchainService(App.appConfigProvider, App.networkManager, bep20NetworkType)
+            val binanceService = AddBep2TokenBlockchainService(App.buildConfigProvider)
             val services = listOf(ethereumService, binanceSmartChainService, binanceService)
 
-            val service = AddTokenService(io.vextabit.wallet.core.App.coinManager, services, io.vextabit.wallet.core.App.walletManager, io.vextabit.wallet.core.App.accountManager)
+            val service = AddTokenService(App.coinManager, services, App.walletManager, App.accountManager)
             val viewModel = AddTokenViewModel(service)
 
             return viewModel as T

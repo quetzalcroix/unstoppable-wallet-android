@@ -9,9 +9,9 @@ import io.vextabit.wallet.modules.market.SortingField
 import io.vextabit.wallet.modules.market.sortedByDescendingNullLast
 import io.vextabit.wallet.modules.market.sortedByNullLast
 import io.vextabit.wallet.ui.extensions.MarketListHeaderView
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.ICurrencyManager
-import io.horizontalsystems.xrateskit.entities.MarketTicker
+import io.vextabit.xrateskit.entities.MarketTicker
 import java.math.BigDecimal
 
 class CoinMarketsViewModel(

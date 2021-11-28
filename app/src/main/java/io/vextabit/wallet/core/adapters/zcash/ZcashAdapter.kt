@@ -21,7 +21,7 @@ import io.vextabit.wallet.entities.Wallet
 import io.vextabit.wallet.entities.transactionrecords.TransactionRecord
 import io.vextabit.wallet.entities.transactionrecords.bitcoin.BitcoinIncomingTransactionRecord
 import io.vextabit.wallet.entities.transactionrecords.bitcoin.BitcoinOutgoingTransactionRecord
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.hdwalletkit.Mnemonic
 import io.reactivex.BackpressureStrategy
 import io.reactivex.Flowable

@@ -3,7 +3,7 @@ package io.vextabit.wallet.modules.settings.security.privacy
 import io.vextabit.wallet.core.*
 import io.vextabit.wallet.core.managers.TorStatus
 import io.vextabit.wallet.entities.*
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.IPinComponent
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable

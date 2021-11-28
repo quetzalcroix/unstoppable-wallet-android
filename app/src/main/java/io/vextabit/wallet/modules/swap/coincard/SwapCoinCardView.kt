@@ -10,7 +10,7 @@ import io.vextabit.wallet.R
 import io.vextabit.wallet.core.setCoinImage
 import io.vextabit.wallet.modules.swap.SwapMainModule
 import io.vextabit.wallet.modules.swap.coinselect.SelectSwapCoinDialogFragment
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.findNavController
 import io.horizontalsystems.core.getNavigationLiveData
 import io.horizontalsystems.core.setOnSingleClickListener

@@ -7,7 +7,7 @@ import com.trustwallet.walletconnect.models.session.WCSession
 import io.vextabit.wallet.core.App
 import io.vextabit.wallet.entities.PriceAlert
 import io.vextabit.wallet.entities.SubscriptionJob
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import java.math.BigDecimal
 import java.util.*
 

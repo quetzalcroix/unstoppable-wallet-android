@@ -11,10 +11,10 @@ import io.vextabit.wallet.modules.coin.adapters.CoinChartAdapter
 import io.vextabit.wallet.modules.coin.adapters.CoinSubtitleAdapter
 import io.vextabit.wallet.modules.market.*
 import io.horizontalsystems.chartview.ChartView
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.SingleLiveEvent
 import io.horizontalsystems.views.ListPosition
-import io.horizontalsystems.xrateskit.entities.*
+import io.vextabit.xrateskit.entities.*
 import io.reactivex.disposables.CompositeDisposable
 import retrofit2.HttpException
 import java.math.BigDecimal

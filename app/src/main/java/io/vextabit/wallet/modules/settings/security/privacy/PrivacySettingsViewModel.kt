@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import io.vextabit.wallet.core.managers.TorStatus
 import io.vextabit.wallet.entities.SyncMode
 import io.vextabit.wallet.entities.TransactionDataSortingType
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.SingleLiveEvent
 
 class PrivacySettingsViewModel : ViewModel(), PrivacySettingsModule.IPrivacySettingsView, PrivacySettingsModule.IPrivacySettingsRouter {

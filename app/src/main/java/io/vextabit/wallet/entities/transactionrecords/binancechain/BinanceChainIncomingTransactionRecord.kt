@@ -2,7 +2,7 @@ package io.vextabit.wallet.entities.transactionrecords.binancechain
 
 import io.vextabit.wallet.entities.CoinValue
 import io.horizontalsystems.binancechainkit.models.TransactionInfo
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 
 class BinanceChainIncomingTransactionRecord(
     transaction: TransactionInfo,

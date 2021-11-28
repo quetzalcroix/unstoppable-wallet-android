@@ -6,9 +6,9 @@ import io.vextabit.wallet.R
 import io.vextabit.wallet.core.IRateManager
 import io.vextabit.wallet.core.providers.Translator
 import io.vextabit.wallet.core.subscribeIO
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.views.ListPosition
-import io.horizontalsystems.xrateskit.entities.Auditor
+import io.vextabit.xrateskit.entities.Auditor
 import io.reactivex.disposables.Disposable
 import java.util.*
 

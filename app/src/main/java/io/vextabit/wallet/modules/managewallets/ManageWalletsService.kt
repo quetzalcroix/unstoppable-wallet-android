@@ -5,7 +5,7 @@ import io.vextabit.wallet.core.managers.RestoreSettings
 import io.vextabit.wallet.entities.*
 import io.vextabit.wallet.modules.restore.restoreselectcoins.CoinSettingsService
 import io.vextabit.wallet.modules.restore.restoreselectcoins.RestoreSettingsService
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.subjects.PublishSubject
 import java.util.*

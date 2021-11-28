@@ -8,7 +8,7 @@ import io.vextabit.wallet.core.subscribeIO
 import io.vextabit.wallet.entities.*
 import io.vextabit.wallet.modules.restore.restoreselectcoins.CoinSettingsService
 import io.vextabit.wallet.ui.extensions.BottomSheetSelectorViewItem
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.SingleLiveEvent
 import io.reactivex.disposables.CompositeDisposable
 

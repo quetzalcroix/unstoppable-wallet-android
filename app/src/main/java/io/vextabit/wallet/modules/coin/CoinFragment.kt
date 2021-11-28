@@ -22,10 +22,10 @@ import io.vextabit.wallet.modules.settings.notifications.bottommenu.BottomNotifi
 import io.vextabit.wallet.modules.settings.notifications.bottommenu.NotificationMenuMode
 import io.vextabit.wallet.ui.helpers.LinkHelper
 import io.horizontalsystems.chartview.ChartView
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.findNavController
 import io.horizontalsystems.core.helpers.HudHelper
-import io.horizontalsystems.xrateskit.entities.LinkType
+import io.vextabit.xrateskit.entities.LinkType
 import kotlinx.android.synthetic.main.fragment_coin.*
 
 class CoinFragment : BaseFragment(), CoinChartAdapter.Listener, CoinDataAdapter.Listener, CoinLinksAdapter.Listener {

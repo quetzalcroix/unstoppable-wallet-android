@@ -1,9 +1,9 @@
 package io.vextabit.wallet.core.ethereum
 
 import io.vextabit.wallet.core.IRateManager
-import io.horizontalsystems.coinkit.CoinKit
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.CoinKit
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.ICurrencyManager
 import io.horizontalsystems.ethereumkit.models.Address
 

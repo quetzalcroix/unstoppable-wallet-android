@@ -10,8 +10,8 @@ import io.vextabit.wallet.entities.FeeRateState
 import io.vextabit.wallet.modules.send.SendModule
 import io.vextabit.wallet.modules.send.SendModule.AmountInfo
 import io.vextabit.wallet.modules.send.submodules.amount.SendAmountInfo
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.entities.Currency
 import java.math.BigDecimal
 import java.math.BigInteger

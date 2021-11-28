@@ -3,7 +3,7 @@ package io.vextabit.wallet.modules.blockchainsettings
 import io.vextabit.wallet.entities.AccountType.Derivation
 import io.vextabit.wallet.entities.BitcoinCashCoinType
 import io.vextabit.wallet.ui.extensions.BottomSheetSelectorViewItem
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 
 object BlockchainSettingsModule {
 

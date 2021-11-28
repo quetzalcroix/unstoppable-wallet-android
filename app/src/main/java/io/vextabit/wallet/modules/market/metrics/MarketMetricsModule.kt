@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModelProvider
 import io.vextabit.wallet.core.App
 import io.vextabit.wallet.entities.CurrencyValue
 import io.horizontalsystems.core.entities.Currency
-import io.horizontalsystems.xrateskit.entities.GlobalCoinMarket
+import io.vextabit.xrateskit.entities.GlobalCoinMarket
 import java.math.BigDecimal
 
 object MarketMetricsModule {

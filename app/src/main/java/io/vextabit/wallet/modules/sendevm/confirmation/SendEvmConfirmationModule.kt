@@ -14,7 +14,7 @@ import io.vextabit.wallet.modules.sendevm.SendEvmData
 import io.vextabit.wallet.modules.sendevm.SendEvmModule
 import io.vextabit.wallet.modules.sendevmtransaction.SendEvmTransactionService
 import io.vextabit.wallet.modules.sendevmtransaction.SendEvmTransactionViewModel
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.findNavController
 import io.horizontalsystems.ethereumkit.core.EthereumKit
 import io.horizontalsystems.ethereumkit.core.EthereumKit.NetworkType

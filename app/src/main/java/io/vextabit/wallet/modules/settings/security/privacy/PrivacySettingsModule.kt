@@ -3,7 +3,7 @@ package io.vextabit.wallet.modules.settings.security.privacy
 import io.vextabit.wallet.core.App
 import io.vextabit.wallet.core.managers.TorStatus
 import io.vextabit.wallet.entities.*
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.views.ListPosition
 
 object PrivacySettingsModule {

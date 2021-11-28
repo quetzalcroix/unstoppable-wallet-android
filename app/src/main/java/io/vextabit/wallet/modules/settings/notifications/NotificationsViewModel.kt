@@ -7,7 +7,7 @@ import io.vextabit.wallet.R
 import io.vextabit.wallet.core.*
 import io.vextabit.wallet.entities.PriceAlert
 import io.vextabit.wallet.modules.settings.notifications.bottommenu.NotificationMenuMode
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.SingleLiveEvent
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers

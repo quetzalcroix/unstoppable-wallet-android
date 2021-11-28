@@ -7,7 +7,7 @@ import io.vextabit.wallet.entities.Address
 import io.vextabit.wallet.modules.send.SendModule
 import io.vextabit.wallet.modules.swap.settings.AddressResolutionService
 import io.vextabit.wallet.modules.swap.settings.RecipientAddressViewModel
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import java.math.BigDecimal
 
 object SendAddressModule {

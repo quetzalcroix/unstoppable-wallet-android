@@ -7,7 +7,7 @@ import io.vextabit.wallet.modules.market.MarketItem
 import io.vextabit.wallet.modules.market.Score
 import io.horizontalsystems.core.BackgroundManager
 import io.horizontalsystems.core.ICurrencyManager
-import io.horizontalsystems.xrateskit.entities.TimePeriod
+import io.vextabit.xrateskit.entities.TimePeriod
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import io.reactivex.subjects.BehaviorSubject

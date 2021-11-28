@@ -1,7 +1,7 @@
 package io.vextabit.wallet.entities
 
 import io.vextabit.wallet.entities.AccountType.Derivation
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 
 class DerivationSetting(val coinType: CoinType,
                         var derivation: Derivation)

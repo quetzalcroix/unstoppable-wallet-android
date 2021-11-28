@@ -5,7 +5,7 @@ import io.vextabit.wallet.core.IAppNumberFormatter
 import io.vextabit.wallet.core.providers.Translator
 import io.vextabit.wallet.modules.swap.uniswap.UniswapModule
 import io.vextabit.wallet.modules.swap.uniswap.UniswapTradeService
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.uniswapkit.models.TradeData
 import io.horizontalsystems.uniswapkit.models.TradeOptions
 import io.horizontalsystems.uniswapkit.models.TradeType

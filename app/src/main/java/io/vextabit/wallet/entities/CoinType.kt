@@ -1,7 +1,7 @@
 package io.vextabit.wallet.entities
 
 import io.vextabit.wallet.core.managers.RestoreSettingType
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 
 val CoinType.blockchainType: String?
     get() {

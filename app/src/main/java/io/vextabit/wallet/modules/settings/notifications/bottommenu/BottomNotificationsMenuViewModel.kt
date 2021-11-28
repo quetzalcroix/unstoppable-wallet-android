@@ -6,7 +6,7 @@ import androidx.lifecycle.ViewModel
 import io.vextabit.wallet.R
 import io.vextabit.wallet.core.IPriceAlertManager
 import io.vextabit.wallet.entities.PriceAlert
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 
 class BottomNotificationsMenuViewModel(
         private val coinType: CoinType,

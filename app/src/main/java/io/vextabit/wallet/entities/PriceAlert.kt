@@ -2,7 +2,7 @@ package io.vextabit.wallet.entities
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 
 
 @Entity

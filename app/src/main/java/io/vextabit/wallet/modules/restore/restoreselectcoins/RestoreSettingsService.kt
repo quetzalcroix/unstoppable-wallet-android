@@ -7,7 +7,7 @@ import io.vextabit.wallet.core.managers.RestoreSettingsManager
 import io.vextabit.wallet.entities.Account
 import io.vextabit.wallet.entities.AccountOrigin
 import io.vextabit.wallet.entities.restoreSettingTypes
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.reactivex.subjects.PublishSubject
 
 class RestoreSettingsService(private val manager: RestoreSettingsManager) : Clearable {

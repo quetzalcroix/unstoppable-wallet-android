@@ -19,7 +19,7 @@ import io.vextabit.wallet.modules.transactionInfo.TransactionInfoItemType.*
 import io.vextabit.wallet.modules.transactionInfo.TransactionStatusViewItem.*
 import io.vextabit.wallet.modules.transactionInfo.adapters.TransactionInfoViewItem
 import io.vextabit.wallet.modules.transactions.TransactionStatus
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.helpers.DateHelper
 import io.horizontalsystems.views.ListPosition.*
 import java.math.BigDecimal

@@ -5,8 +5,8 @@ import io.vextabit.wallet.entities.LastBlockInfo
 import io.vextabit.wallet.entities.transactionrecords.TransactionRecord
 import io.vextabit.wallet.entities.Wallet
 import io.vextabit.wallet.modules.transactions.TransactionSource.*
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType.*
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType.*
 import io.horizontalsystems.core.entities.Currency
 import java.math.BigDecimal
 

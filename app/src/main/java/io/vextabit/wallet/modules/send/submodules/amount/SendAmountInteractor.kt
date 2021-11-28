@@ -4,7 +4,7 @@ import io.vextabit.wallet.core.ILocalStorage
 import io.vextabit.wallet.core.IRateManager
 import io.horizontalsystems.core.entities.Currency
 import io.vextabit.wallet.modules.send.SendModule
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.BackgroundManager
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers

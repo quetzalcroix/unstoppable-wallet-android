@@ -10,7 +10,7 @@ import io.vextabit.wallet.R
 import io.vextabit.wallet.core.setCoinImage
 import io.vextabit.wallet.core.setOnSingleClickListener
 import io.vextabit.wallet.entities.label
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.views.inflate
 import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.view_holder_market_item.*

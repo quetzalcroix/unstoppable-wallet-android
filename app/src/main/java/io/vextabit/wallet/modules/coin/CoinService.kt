@@ -2,9 +2,9 @@ package io.vextabit.wallet.modules.coin
 
 import io.vextabit.wallet.core.*
 import io.vextabit.wallet.core.managers.MarketFavoritesManager
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.entities.Currency
-import io.horizontalsystems.xrateskit.entities.*
+import io.vextabit.xrateskit.entities.*
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import io.reactivex.schedulers.Schedulers

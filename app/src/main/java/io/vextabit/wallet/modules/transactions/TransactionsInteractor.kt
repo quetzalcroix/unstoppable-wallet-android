@@ -5,7 +5,7 @@ import io.vextabit.wallet.core.*
 import io.vextabit.wallet.core.managers.ConnectivityManager
 import io.vextabit.wallet.entities.LastBlockInfo
 import io.vextabit.wallet.entities.transactionrecords.TransactionRecord
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.ICurrencyManager
 import io.reactivex.Single
 import io.reactivex.disposables.CompositeDisposable

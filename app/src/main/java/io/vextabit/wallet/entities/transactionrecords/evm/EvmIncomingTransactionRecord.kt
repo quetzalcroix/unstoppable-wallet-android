@@ -1,7 +1,7 @@
 package io.vextabit.wallet.entities.transactionrecords.evm
 
 import io.vextabit.wallet.entities.CoinValue
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.ethereumkit.models.FullTransaction
 import java.math.BigDecimal
 

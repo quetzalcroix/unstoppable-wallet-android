@@ -5,7 +5,7 @@ import io.vextabit.wallet.core.subscribeIO
 import io.vextabit.wallet.entities.DataState
 import io.horizontalsystems.chartview.ChartView
 import io.horizontalsystems.core.entities.Currency
-import io.horizontalsystems.xrateskit.entities.TimePeriod
+import io.vextabit.xrateskit.entities.TimePeriod
 import io.reactivex.disposables.Disposable
 import io.reactivex.subjects.BehaviorSubject
 

@@ -5,8 +5,8 @@ import io.vextabit.wallet.core.IRestoreSettingsStorage
 import io.vextabit.wallet.core.providers.Translator
 import io.vextabit.wallet.entities.Account
 import io.vextabit.wallet.entities.RestoreSettingRecord
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 
 class RestoreSettingsManager(
         private val storage: IRestoreSettingsStorage,

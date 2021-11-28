@@ -3,8 +3,8 @@ package io.vextabit.wallet.modules.send.submodules.fee
 import io.vextabit.wallet.core.FeeRatePriority
 import io.vextabit.wallet.core.IFeeRateProvider
 import io.vextabit.wallet.core.IRateManager
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.entities.Currency
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers

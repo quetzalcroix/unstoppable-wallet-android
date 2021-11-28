@@ -16,8 +16,8 @@ import io.vextabit.wallet.core.storage.migrations.Migration_32_33
 import io.vextabit.wallet.core.storage.migrations.Migration_33_34
 import io.vextabit.wallet.core.storage.migrations.Migration_34_35
 import io.vextabit.wallet.entities.*
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import java.util.*
 
 @Database(version = 35, exportSchema = false, entities = [

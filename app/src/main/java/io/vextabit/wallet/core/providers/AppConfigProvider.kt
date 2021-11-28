@@ -3,7 +3,7 @@ package io.vextabit.wallet.core.providers
 import io.vextabit.wallet.BuildConfig
 import io.vextabit.wallet.R
 import io.vextabit.wallet.core.IAppConfigProvider
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.IBuildConfigProvider
 import io.horizontalsystems.core.ILanguageConfigProvider
 import io.horizontalsystems.core.entities.Currency

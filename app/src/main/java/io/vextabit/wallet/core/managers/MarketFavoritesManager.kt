@@ -3,7 +3,7 @@ package io.vextabit.wallet.core.managers
 import io.vextabit.wallet.core.storage.AppDatabase
 import io.vextabit.wallet.core.storage.FavoriteCoin
 import io.vextabit.wallet.core.storage.MarketFavoritesDao
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.reactivex.Observable
 import io.reactivex.subjects.PublishSubject
 

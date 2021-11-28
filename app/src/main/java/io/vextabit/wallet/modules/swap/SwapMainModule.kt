@@ -21,8 +21,8 @@ import io.vextabit.wallet.modules.swap.settings.SwapSettingsBaseFragment
 import io.vextabit.wallet.modules.swap.settings.oneinch.OneInchSettingsFragment
 import io.vextabit.wallet.modules.swap.settings.uniswap.UniswapSettingsFragment
 import io.vextabit.wallet.modules.swap.uniswap.UniswapFragment
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.findNavController
 import io.horizontalsystems.ethereumkit.core.EthereumKit
 import io.reactivex.Observable

@@ -1,8 +1,8 @@
 package io.vextabit.wallet.modules.swap
 
 import io.vextabit.wallet.core.ILocalStorage
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.reactivex.subjects.PublishSubject
 
 class SwapMainService(

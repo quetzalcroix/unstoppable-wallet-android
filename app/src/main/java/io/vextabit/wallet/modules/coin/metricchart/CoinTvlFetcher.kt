@@ -3,8 +3,8 @@ package io.vextabit.wallet.modules.coin.metricchart
 import io.vextabit.wallet.R
 import io.vextabit.wallet.core.IRateManager
 import io.vextabit.wallet.modules.metricchart.MetricChartModule
-import io.horizontalsystems.coinkit.models.CoinType
-import io.horizontalsystems.xrateskit.entities.TimePeriod
+import io.vextabit.coinkit.models.CoinType
+import io.vextabit.xrateskit.entities.TimePeriod
 import io.reactivex.Single
 
 class CoinTvlFetcher(

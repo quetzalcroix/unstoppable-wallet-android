@@ -7,7 +7,7 @@ import io.vextabit.wallet.core.adapters.zcash.ZcashAdapter
 import io.vextabit.wallet.core.managers.*
 import io.vextabit.wallet.entities.Account
 import io.vextabit.wallet.entities.Wallet
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.BackgroundManager
 
 class AdapterFactory(

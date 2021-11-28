@@ -14,7 +14,7 @@ import io.vextabit.wallet.modules.walletconnect.WalletConnectSendEthereumTransac
 import io.vextabit.wallet.modules.walletconnect.WalletConnectService
 import io.vextabit.wallet.modules.walletconnect.request.sendtransaction.WalletConnectSendEthereumTransactionRequestService
 import io.vextabit.wallet.modules.walletconnect.request.sendtransaction.WalletConnectSendEthereumTransactionRequestViewModel
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.ethereumkit.core.EthereumKit.NetworkType
 import io.horizontalsystems.ethereumkit.models.Address
 import java.math.BigInteger
@@ -33,17 +33,17 @@ object WalletConnectRequestModule {
                 NetworkType.EthRopsten,
                 NetworkType.EthKovan,
                 NetworkType.EthGoerli,
-                NetworkType.EthRinkeby -> io.vextabit.wallet.core.App.coinManager.getCoin(CoinType.Ethereum)!!
-                NetworkType.BscMainNet -> io.vextabit.wallet.core.App.coinManager.getCoin(CoinType.BinanceSmartChain)!!
+                NetworkType.EthRinkeby -> App.coinManager.getCoin(CoinType.Ethereum)!!
+                NetworkType.BscMainNet -> App.coinManager.getCoin(CoinType.BinanceSmartChain)!!
             }
         }
         private val service by lazy { WalletConnectSendEthereumTransactionRequestService(request, baseService) }
-        private val coinServiceFactory by lazy { EvmCoinServiceFactory(coin, io.vextabit.wallet.core.App.coinKit, io.vextabit.wallet.core.App.currencyManager, io.vextabit.wallet.core.App.xRateManager) }
+        private val coinServiceFactory by lazy { EvmCoinServiceFactory(coin, App.coinKit, App.currencyManager, App.xRateManager) }
         private val transactionService by lazy {
             val feeRateProvider = FeeRateProviderFactory.provider(coin)!!
             EvmTransactionService(evmKit, feeRateProvider, 10)
         }
-        private val sendService by lazy { SendEvmTransactionService(SendEvmData(service.transactionData), evmKit, transactionService, io.vextabit.wallet.core.App.activateCoinManager, service.gasPrice) }
+        private val sendService by lazy { SendEvmTransactionService(SendEvmData(service.transactionData), evmKit, transactionService, App.activateCoinManager, service.gasPrice) }
 
         @Suppress("UNCHECKED_CAST")
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {

@@ -4,8 +4,8 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import io.vextabit.wallet.core.IAppConfigProvider
 import io.vextabit.wallet.core.INetworkManager
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.reactivex.Single
 
 class EnableCoinsEip20Provider(

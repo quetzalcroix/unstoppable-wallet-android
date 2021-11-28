@@ -5,10 +5,10 @@ import io.vextabit.wallet.core.fiat.AmountTypeSwitchService.AmountType
 import io.vextabit.wallet.entities.CoinValue
 import io.vextabit.wallet.entities.CurrencyValue
 import io.vextabit.wallet.modules.send.SendModule.AmountInfo
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.ICurrencyManager
 import io.horizontalsystems.core.entities.Currency
-import io.horizontalsystems.xrateskit.entities.LatestRate
+import io.vextabit.xrateskit.entities.LatestRate
 import io.reactivex.Observable
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable

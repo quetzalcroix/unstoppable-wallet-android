@@ -9,7 +9,7 @@ import io.vextabit.wallet.core.fiat.FiatServiceSendEvm
 import io.vextabit.wallet.core.subscribeIO
 import io.vextabit.wallet.modules.send.SendModule.AmountInfo
 import io.vextabit.wallet.ui.extensions.AmountInputView
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.reactivex.Flowable
 import io.reactivex.disposables.CompositeDisposable
 import java.lang.Integer.min

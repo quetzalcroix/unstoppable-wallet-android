@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import io.vextabit.wallet.R
 import io.vextabit.wallet.core.App
-import io.horizontalsystems.xrateskit.entities.CoinData
+import io.vextabit.xrateskit.entities.CoinData
 import java.math.BigDecimal
 
 object TvlRankModule {

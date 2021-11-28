@@ -5,7 +5,7 @@ import io.vextabit.wallet.core.IRateManager
 import io.vextabit.wallet.entities.CoinValue
 import io.vextabit.wallet.entities.CurrencyValue
 import io.vextabit.wallet.modules.send.SendModule
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.ICurrencyManager
 import java.math.BigDecimal
 import java.math.BigInteger

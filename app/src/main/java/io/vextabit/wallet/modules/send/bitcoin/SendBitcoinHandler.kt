@@ -9,7 +9,7 @@ import io.vextabit.wallet.modules.send.submodules.amount.SendAmountModule
 import io.vextabit.wallet.modules.send.submodules.fee.SendFeeModule
 import io.vextabit.wallet.modules.send.submodules.hodler.SendHodlerModule
 import io.vextabit.wallet.modules.send.submodules.memo.SendMemoModule
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.hodler.HodlerData
 import io.horizontalsystems.hodler.HodlerPlugin
 import io.horizontalsystems.hodler.LockTimeInterval

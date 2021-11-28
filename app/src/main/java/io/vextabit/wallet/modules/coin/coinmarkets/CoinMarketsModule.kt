@@ -3,7 +3,7 @@ package io.vextabit.wallet.modules.coin.coinmarkets
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import io.vextabit.wallet.core.App
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 
 object CoinMarketsModule {
     class Factory(private val coinCode: String, private val coinType: CoinType) : ViewModelProvider.Factory {

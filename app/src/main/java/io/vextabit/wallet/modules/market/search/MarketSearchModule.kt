@@ -3,7 +3,7 @@ package io.vextabit.wallet.modules.market.search
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import io.vextabit.wallet.core.App
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 
 object MarketSearchModule {
 

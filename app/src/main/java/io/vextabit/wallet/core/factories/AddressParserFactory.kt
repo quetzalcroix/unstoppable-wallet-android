@@ -2,8 +2,8 @@ package io.vextabit.wallet.core.factories
 
 import io.vextabit.wallet.core.IAddressParser
 import io.vextabit.wallet.core.utils.AddressParser
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 
 class AddressParserFactory {
     fun parser(coin: Coin): IAddressParser {

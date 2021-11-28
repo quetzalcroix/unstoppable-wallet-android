@@ -2,7 +2,7 @@ package io.vextabit.wallet.modules.addtoken
 
 import io.vextabit.wallet.core.*
 import io.vextabit.wallet.entities.Wallet
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.reactivex.Observable
 import io.reactivex.Single
 import io.reactivex.disposables.Disposable

@@ -5,7 +5,7 @@ import io.vextabit.wallet.core.IBlockchainSettingsStorage
 import io.vextabit.wallet.core.IDerivationSettingsManager
 import io.vextabit.wallet.core.IWalletManager
 import io.vextabit.wallet.entities.*
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.CoinType
 
 class DerivationSettingsManager(
         private val blockchainSettingsStorage: IBlockchainSettingsStorage,

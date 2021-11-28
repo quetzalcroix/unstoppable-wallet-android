@@ -10,8 +10,8 @@ import io.vextabit.wallet.modules.coin.metricchart.CoinTvlFetcher
 import io.vextabit.wallet.modules.market.marketglobal.MarketGlobalFetcher
 import io.horizontalsystems.chartview.ChartData
 import io.horizontalsystems.chartview.ChartView
-import io.horizontalsystems.coinkit.models.CoinType
-import io.horizontalsystems.xrateskit.entities.TimePeriod
+import io.vextabit.coinkit.models.CoinType
+import io.vextabit.xrateskit.entities.TimePeriod
 import io.reactivex.Single
 import kotlinx.android.parcel.Parcelize
 import java.math.BigDecimal

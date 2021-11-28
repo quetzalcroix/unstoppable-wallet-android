@@ -16,7 +16,7 @@ import io.vextabit.wallet.modules.transactionInfo.TransactionInfoButtonType.*
 import io.vextabit.wallet.modules.transactionInfo.adapters.TransactionInfoViewItem
 import io.vextabit.wallet.modules.transactions.TransactionSource.*
 import io.vextabit.wallet.modules.transactions.TransactionWallet
-import io.horizontalsystems.coinkit.models.Coin
+import io.vextabit.coinkit.models.Coin
 import io.horizontalsystems.core.SingleLiveEvent
 import io.horizontalsystems.ethereumkit.core.EthereumKit
 import io.reactivex.disposables.CompositeDisposable

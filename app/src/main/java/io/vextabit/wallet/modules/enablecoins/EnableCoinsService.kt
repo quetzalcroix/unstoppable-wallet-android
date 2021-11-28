@@ -3,8 +3,8 @@ package io.vextabit.wallet.modules.enablecoins
 import io.vextabit.wallet.core.ICoinManager
 import io.vextabit.wallet.core.subscribeIO
 import io.vextabit.wallet.entities.AccountType
-import io.horizontalsystems.coinkit.models.Coin
-import io.horizontalsystems.coinkit.models.CoinType
+import io.vextabit.coinkit.models.Coin
+import io.vextabit.coinkit.models.CoinType
 import io.horizontalsystems.core.IBuildConfigProvider
 import io.horizontalsystems.ethereumkit.core.EthereumKit
 import io.reactivex.disposables.CompositeDisposable
